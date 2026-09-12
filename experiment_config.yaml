@@ -30,8 +30,27 @@ baseline_b:
   chunks: 3456
   file: "data/processed/chunks.jsonl"
 
-embedding_model: "TODO: dipilih Anggota 2 (kandidat BAAI/bge-m3, multilingual-e5-*)"
+embedding_model: "intfloat/multilingual-e5-base"
+embedding_dimension: 768
+embedding_prefix: { document: "passage: ", query: "query: " }
+embedding_note: "dipilih Anggota 2 (plan Bab 6.2): CPU-only, 278M param, ukuran wajar, kualitas Bahasa Indonesia; bge-m3 ditolak karena lambat di CPU. Throughput ~11.6 chunk/s -> 3456 chunk ~5 menit."
+
 vector_db: "chroma"
+vectorstore_dir: "vectorstore/chroma"
+collection: "rag_ketenagakerjaan"
+hnsw_space: "cosine"
+chunk_baseline_indexed: "b"   # data/processed/chunks.jsonl (700/150, 3456 chunk)
+
 top_k: 5
+
+retrieval_metrics:
+  metric: "Recall@k (document-level)"
+  k: 5
+  total_questions: 20
+  in_domain_questions: 17
+  recall_at_5: 1.0
+  mean_recall_support: 0.7647
+  results_file: "evaluation/retrieval_results.json"
+
 llm: "Gemini 2.5 Flash"
 temperature: 0-0.2

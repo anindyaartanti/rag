@@ -1,0 +1,166 @@
+{
+  "description": "Dataset evaluasi retrieval RAG Ketenagakerjaan (plan Bab 29). Ground truth expected_sources = document_id (data/selected/document_manifest.csv).",
+  "k_default": 5,
+  "questions": [
+    {
+      "id": "Q01",
+      "difficulty": "easy",
+      "question": "Apa yang dimaksud dengan hubungan kerja?",
+      "expected_sources": ["uu-13-2003"],
+      "expected_sections": ["Pasal 1"],
+      "notes": "Definisi hubungan kerja: hubungan antara pengusaha dan pekerja/buruh berdasarkan perjanjian kerja."
+    },
+    {
+      "id": "Q02",
+      "difficulty": "easy",
+      "question": "Apa yang dimaksud dengan perjanjian kerja waktu tertentu (PKWT)?",
+      "expected_sources": ["pp-35-2021", "uu-13-2003"],
+      "expected_sections": ["Pasal 1 PP 35/2021", "Pasal 56 UU 13/2003"],
+      "notes": "Definisi dan dasar PKWT."
+    },
+    {
+      "id": "Q03",
+      "difficulty": "easy",
+      "question": "Apa yang dimaksud dengan upah minimum?",
+      "expected_sources": ["pp-36-2021", "uu-13-2003"],
+      "expected_sections": ["Pasal 1 PP 36/2021", "Pasal 88 UU 13/2003"],
+      "notes": "Definisi upah minimum dan dasar pengupahan."
+    },
+    {
+      "id": "Q04",
+      "difficulty": "easy",
+      "question": "Apa yang dimaksud dengan serikat pekerja/serikat buruh?",
+      "expected_sources": ["uu-21-2000"],
+      "expected_sections": ["Pasal 1"],
+      "notes": "Serikat pekerja/serikat buruh adalah organisasi yang dibentuk dari, oleh, dan untuk pekerja/buruh."
+    },
+    {
+      "id": "Q05",
+      "difficulty": "easy",
+      "question": "Berapa batas maksimum waktu kerja lembur dalam sehari?",
+      "expected_sources": ["uu-13-2003"],
+      "expected_sections": ["Pasal 78"],
+      "notes": "Waktu kerja lembur maksimal 3 jam sehari dan 14 jam seminggu (lihat Pasal 78)."
+    },
+    {
+      "id": "Q06",
+      "difficulty": "medium",
+      "question": "Apakah PKWT dapat diperpanjang dan berapa lama keseluruhan masa kerjanya?",
+      "expected_sources": ["pp-35-2021", "uu-13-2003"],
+      "expected_sections": ["Pasal 8 PP 35/2021", "Pasal 59 UU 13/2003"],
+      "notes": "PKWT jangka waktu paling lama 5 tahun termasuk perpanjangan."
+    },
+    {
+      "id": "Q07",
+      "difficulty": "medium",
+      "question": "Apa saja hak pekerja/buruh yang harus diterima ketika terjadi PHK?",
+      "expected_sources": ["uu-13-2003", "pp-35-2021"],
+      "expected_sections": ["Pasal 156", "Pasal 40-42 PP 35/2021"],
+      "notes": "Uang pesangon, uang penghargaan masa kerja, uang penggantian hak."
+    },
+    {
+      "id": "Q08",
+      "difficulty": "medium",
+      "question": "Bagaimana cara menghitung besaran uang pesangon?",
+      "expected_sources": ["pp-35-2021", "uu-13-2003"],
+      "expected_sections": ["Pasal 40 PPG 35/2021", "Pasal 156 UU 13/2003"],
+      "notes": "Perhitungan berdasarkan masa kerja dan alasan PHK."
+    },
+    {
+      "id": "Q09",
+      "difficulty": "medium",
+      "question": "Apa saja syarat sah perjanjian kerja?",
+      "expected_sources": ["uu-13-2003"],
+      "expected_sections": ["Pasal 52"],
+      "notes": "Kesepakatan, kecakapan hukum, pekerjaan yang dijanjikan tidak dilarang, dan ketertiban umum."
+    },
+    {
+      "id": "Q10",
+      "difficulty": "medium",
+      "question": "Bagaimana tata cara penggunaan tenaga kerja asing (TKA)?",
+      "expected_sources": ["permenaker-10-2018", "uu-13-2003"],
+      "expected_sections": ["Permenaker 10/2018", "Pasal 42 UU 13/2003"],
+      "notes": "Izin penggunaan TKA dan kewajiban pemberi kerja."
+    },
+    {
+      "id": "Q11",
+      "difficulty": "medium",
+      "question": "Apa saja manfaat program Jaminan Kehilangan Pekerjaan (JKP)?",
+      "expected_sources": ["pp-37-2021"],
+      "expected_sections": ["Pasal 3 PP 37/2021"],
+      "notes": "Uang tunai, akses informasi pasar kerja, dan pelatihan kerja."
+    },
+    {
+      "id": "Q12",
+      "difficulty": "medium",
+      "question": "Bagaimana penyelesaian perselisihan hubungan industrial melalui mediasi?",
+      "expected_sources": ["uu-2-2004"],
+      "expected_sections": ["Pasal 10"],
+      "notes": "Mediasi oleh mediator di instansi ketenagakerjaan."
+    },
+    {
+      "id": "Q13",
+      "difficulty": "medium",
+      "question": "Apa yang dimaksud dengan struktur dan skala upah?",
+      "expected_sources": ["permenaker-1-2017", "pp-36-2021"],
+      "expected_sections": ["Permenaker 1/2017", "Pasal 8 PP 36/2021"],
+      "notes": "Kewajiban pengusaha menyusun struktur dan skala upah."
+    },
+    {
+      "id": "Q14",
+      "difficulty": "hard",
+      "question": "Bagaimana ketentuan PHK menurut regulasi yang tersedia, termasuk hak-hak yang timbul?",
+      "expected_sources": ["uu-13-2003", "uu-6-2023", "pp-35-2021"],
+      "expected_sections": ["Pasal 150-172 UU 13/2003", "UU 6/2023", "PP 35/2021"],
+      "notes": "Pertanyaan lintas dokumen (cross-document reasoning)."
+    },
+    {
+      "id": "Q15",
+      "difficulty": "hard",
+      "question": "Apa perbedaan antara PKWT dan PKWTT?",
+      "expected_sources": ["uu-13-2003", "pp-35-2021"],
+      "expected_sections": ["Pasal 56-59 UU 13/2003", "Pasal 1 PP 35/2021"],
+      "notes": "Perbandingan waktu tertentu vs waktu tidak tertentu."
+    },
+    {
+      "id": "Q16",
+      "difficulty": "hard",
+      "question": "Bagaimana hubungan antara UU Cipta Kerja dan UU 13/2003 terkait pengupahan dan pesangon?",
+      "expected_sources": ["uu-6-2023", "uu-13-2003", "pp-35-2021"],
+      "expected_sections": ["UU 6/2023", "UU 13/2003", "PP 35/2021"],
+      "notes": "Pertanyaan multi-dokumen tentang perubahan regulasi."
+    },
+    {
+      "id": "Q17",
+      "difficulty": "hard",
+      "question": "Apa saja program jaminan sosial ketenagakerjaan dan badan yang menyelenggarakannya?",
+      "expected_sources": ["uu-40-2004", "uu-24-2011", "pp-37-2021"],
+      "expected_sections": ["UU 40/2004", "UU 24/2011", "PP 37/2021"],
+      "notes": "SJSN, BPJS Ketenagakerjaan, program JHT/JP/JKK/JKM/JKP."
+    },
+    {
+      "id": "Q18",
+      "difficulty": "out-of-domain",
+      "question": "Bagaimana ketentuan pajak penghasilan bagi perusahaan tambang?",
+      "expected_sources": [],
+      "expected_sections": [],
+      "notes": "Di luar knowledge base ketenagakerjaan (tax/mining)."
+    },
+    {
+      "id": "Q19",
+      "difficulty": "out-of-domain",
+      "question": "Apa saja syarat pembayaran dividen oleh BUMN?",
+      "expected_sources": [],
+      "expected_sections": [],
+      "notes": "Di luar knowledge base (dividen/BUMN)."
+    },
+    {
+      "id": "Q20",
+      "difficulty": "out-of-domain",
+      "question": "Siapa presiden Indonesia saat ini?",
+      "expected_sources": [],
+      "expected_sections": [],
+      "notes": "Fakta umum di luar knowledge base regulasi."
+    }
+  ]
+}
