@@ -1,0 +1,37 @@
+python_version: "3.12.13"
+os: win32 (Windows)
+source: "Unduh PDF resmi peraturan.go.id (deviasi plan Bab 2/8: repo GitHub tidak memuat data)"
+
+jumlah_dokumen: 11
+data_selected: "data/selected/document_manifest.csv"
+metadata: "data/selected/metadata.json"
+markdown: "data/selected/markdown/"
+
+splitter: "RecursiveCharacterTextSplitter"
+length_function: "karakter (len)"
+separators:
+  - "\n\nBAB "
+  - "\n\nBagian "
+  - "\n\n### "
+  - "\n\n## "
+  - "\n\nPasal "
+  - "\n\n"
+  - "\n"
+  - " "
+  - ""
+baseline_a:
+  chunk_size: 500
+  chunk_overlap: 100
+  chunks: 4725
+  file: "data/processed/chunks_a.jsonl"
+baseline_b:
+  chunk_size: 700
+  chunk_overlap: 150
+  chunks: 3456
+  file: "data/processed/chunks.jsonl"
+
+embedding_model: "TODO: dipilih Anggota 2 (kandidat BAAI/bge-m3, multilingual-e5-*)"
+vector_db: "chroma"
+top_k: 5
+llm: "Gemini 2.5 Flash"
+temperature: 0-0.2

@@ -1,0 +1,12 @@
+.env
+*.key
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+vectorstore/
+data/raw/
+logs/
+*.db
+*.faiss
+.peraturan.go.id/

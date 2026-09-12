@@ -1,0 +1,81 @@
+DOCS = [
+    {
+        "id": "uu-13-2003",
+        "slug": "uu-no-13-tahun-2003",
+        "pdf_file": "uu-13-2003.pdf",
+        "domain": "ketenagakerjaan",
+        "selection_reason": "Undang-undang inti/payung seluruh regulasi ketenagakerjaan; sumber utama definisi hubungan kerja, perjanjian kerja, waktu kerja, upah, PHK, dan perlindungan pekerja/buruh.",
+    },
+    {
+        "id": "uu-6-2023",
+        "slug": "uu-no-6-tahun-2023",
+        "pdf_file": "uu-6-2023.pdf",
+        "domain": "ketenagakerjaan",
+        "selection_reason": "Undang-Undang Cipta Kerja versi yang berlaku; mengubah puluhan pasal UU 13/2003 (PKWT, alih daya, upah minimum, pesangon, jaminan kehilangan pekerjaan).",
+    },
+    {
+        "id": "pp-35-2021",
+        "slug": "pp-no-35-tahun-2021",
+        "pdf_file": "pp-35-2021.pdf",
+        "domain": "ketenagakerjaan",
+        "selection_reason": "Aturan pelaksana utama: PKWT, alih daya (outsourcing), waktu kerja dan waktu istirahat, serta pemutusan hubungan kerja - topik inti RAG.",
+    },
+    {
+        "id": "pp-36-2021",
+        "slug": "pp-no-36-tahun-2021",
+        "pdf_file": "pp-36-2021.pdf",
+        "domain": "pengupahan",
+        "selection_reason": "Aturan pelaksana pengupahan: upah minimum, struktur dan skala upah, upah kerja lembur, serta sanksi. Mencabut PP 78/2015.",
+    },
+    {
+        "id": "pp-37-2021",
+        "slug": "pp-no-37-tahun-2021",
+        "pdf_file": "pp-37-2021.pdf",
+        "domain": "jaminan-sosial",
+        "selection_reason": "Penyelenggaraan program Jaminan Kehilangan Pekerjaan (JKP) - jaminan sosial baru terkait PHK.",
+    },
+    {
+        "id": "uu-40-2004",
+        "slug": "uu-no-40-tahun-2004",
+        "pdf_file": "uu-40-2004.pdf",
+        "domain": "jaminan-sosial",
+        "selection_reason": "Dasar hukum sistem jaminan sosial nasional (Jamsostek: JHT, JP, JKK, JKM).",
+    },
+    {
+        "id": "uu-24-2011",
+        "slug": "uu-no-24-tahun-2011",
+        "pdf_file": "uu-24-2011.pdf",
+        "domain": "jaminan-sosial",
+        "selection_reason": "Pembentukan BPJS Ketenagakerjaan dan BPJS Kesehatan sebagai badan penyelenggara jaminan sosial.",
+    },
+    {
+        "id": "uu-21-2000",
+        "slug": "uu-no-21-tahun-2000",
+        "pdf_file": "uu-21-2000.pdf",
+        "domain": "hubungan-industrial",
+        "selection_reason": "Kebebasan berserikat: serikat pekerja/serikat buruh - dasar hubungan industrial.",
+    },
+    {
+        "id": "uu-2-2004",
+        "slug": "uu-no-2-tahun-2004",
+        "pdf_file": "uu-2-2004.pdf",
+        "domain": "hubungan-industrial",
+        "selection_reason": "Penyelesaian perselisihan hubungan industrial: bipartit, mediasi, konsiliasi, arbitrase, pengadilan hubungan industrial.",
+    },
+    {
+        "id": "permenaker-1-2017",
+        "slug": "permenaker-no-1-tahun-2017",
+        "pdf_file": "permenaker-1-2017.pdf",
+        "domain": "pengupahan",
+        "selection_reason": "Aturan rinci struktur dan skala upah oleh Kementerian Ketenagakerjaan; melengkapi PP 36/2021.",
+    },
+    {
+        "id": "permenaker-10-2018",
+        "slug": "permenaker-no-10-tahun-2018",
+        "pdf_file": "permenaker-10-2018.pdf",
+        "domain": "ketenagakerjaan",
+        "selection_reason": "Tata cara penggunaan tenaga kerja asing (TKA) - implementasi UU 13/2003.",
+    },
+]
+
+DOCS_BY_ID = {d["id"]: d for d in DOCS}
