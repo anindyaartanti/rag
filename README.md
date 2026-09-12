@@ -109,6 +109,15 @@ Ringkasan lengkap per dokumen: `data/selected/exploration_summary.md` (Bab 20).
 
 ## 7. Reproducibility
 
+Setup environment (sekali, setelah clone):
+
+```bash
+uv venv                          # buat .venv (otomatis dipakai uv run)
+uv pip install -r requirements.txt
+```
+
+Perintah pipeline:
+
 ```bash
 uv run python src/download_pdfs.py          # unduh PDF (idempoten) → data/raw/pdf
 uv run python src/fetch_metadata.py         # scrape metadata → data/selected/metadata.json
@@ -118,6 +127,10 @@ uv run python src/summarize_dataset.py      # → data/selected/exploration_summ
 uv run python src/chunk_documents.py --baseline b   # → data/processed/chunks.jsonl
 uv run python src/chunk_documents.py --baseline a   # → data/processed/chunks_a.jsonl
 ```
+
+Catatan: `data/raw/pdf` (PDF sumber, ±35 MB) tidak di-commit. Regenerasi opsional
+via `src/download_pdfs.py`; seluruh output akhir sudah tersedia di `data/selected/`
+dan `data/processed/`.
 
 Konfigurasi & konvensi tercatat di `experiment_config.yaml` (Bab 42) dan
 `requirements.txt` (Bab 43).
