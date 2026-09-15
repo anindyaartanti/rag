@@ -144,3 +144,208 @@ Konfigurasi & konvensi tercatat di `experiment_config.yaml` (Bab 42) dan
   untuk kasus yang dapat dipastikan. Pengaruhnya terbatas dan tidak mengubah makna.
 - `UU 6/2023` (1.127 halaman) merupakan dokumen omnibus besar; mayoritas chunk
   berasal dari dokumen ini (2.426 chunk).
+
+---
+
+# RAG Ketenagakerjaan Indonesia — Embedding, Vector DB & Retrieval
+
+Bagian **Anggota 2 (Embedding, Vector DB & Retrieval)**: dari `chunks.jsonl` sampai
+`retrieve(query, k)` + evaluasi retrieval. **Tidak menggunakan LLM sama sekali** pada
+bagian ini (plan Bab 25).
+
+## 1. Ringkasan pipeline
+
+```text
+chunks.jsonl (3.456 chunk, baseline B)
+        │ embedding lokal (intfloat/multilingual-e5-base, dimensi 768)
+        ▼
+vectorstore/chroma (collection rag_ketenagakerjaan, hnsw:space=cosine)
+        │ similarity search: query → embedding → top-k
+        ▼
+retrieve(query, k) → [{text, metadata, score}, ...]    ← kontrak ke Anggota 3
+        │
+        ▼ (evaluasi)
+evaluation/retrieval_results.json (Recall@k + relevance)
+```
+
+## 2. Model embedding (plan Bab 6)
+
+- Model final: **`intfloat/multilingual-e5-base`** (dimensi 768, multilingual,
+  mendukung Bahasa Indonesia, prefix resmi `passage:`/`query:` sesuai Bab 6.5).
+- Kandidat `BAAI/bge-m3` dievaluasi tetapi **ditolak karena lambat di CPU-only**
+  (560M param); e5-base memberi throughput ±11.6 chunk/s → 3.456 chunk ≈ 5 menit,
+  sedangkan embedding query berjalan cepat.
+- Tanpa fine-tuning (Bab 6.3); dokumen dan query memakai **model yang sama**
+  (Bab 6.4); embedding dinormalisasi.
+- Konfigurasi: `src/config.py` dan `experiment_config.yaml`.
+
+## 3. Vector store & metadata (plan Bab 7)
+
+- **ChromaDB** persistent di `vectorstore/chroma`, collection `rag_ketenagakerjaan`,
+  metric **cosine** (`hnsw:space=cosine`).
+- Setiap vektor: `id = chunk_id`, embedding (768), text, metadata dari `chunks.jsonl`:
+  `document_id, filename, source, document_type, document_number, document_year,
+  title` + `bab, bagian, pasal, ayat` (kondisi heading awal chunk).
+- Verifikasi saat build: **count == chunks == 3.456**; index dapat dibuka ulang
+  (`--check`) dan di-query tanpa build ulang (Bab 24).
+
+## 4. Retrieval (plan Bab 11/25)
+
+Fungsi kontrak antaranggota (Bab 47.2):
+
+```python
+from retriever import retrieve
+hits = retrieve("Apa hak pekerja ketika mengalami PHK?", k=5)
+# -> [{"text": ..., "metadata": {...}, "score": ...}, ...]   score = cosine (0..1)
+```
+
+Contoh kutipan hasil `debug_retrieve(query, k=3)`:
+
+```text
+QUERY: Berapa besaran pesangon untuk masa kerja 5 tahun?
+
+[1] similar=0.8611
+    source: uu-6-2023   | BAB IV | Pasal 156  | (Perubahan UU 13/2003)
+[2] similar=0.8599
+    source: uu-13-2003  | BAB XII | Pasal 156 | (Perhitungan pesangon)
+[3] similar=0.8550
+    source: pp-35-2021   | BAB V | Pasal 40  | (PP pelaksana PHK)
+```
+
+Debug mode (Bab 11.5) menampilkan rank/sumber/pasal/score sehingga retrieval dapat
+diperiksa dan diuji **tanpa LLM** via `Retriever().debug_retrieve(query, k)`.
+
+## 5. Reproducibility
+
+Setup environment (sekali, setelah clone):
+
+```bash
+uv venv                          # buat .venv (otomatis dipakai uv run)
+uv pip install -r requirements.txt
+```
+
+Perintah pipeline:
+
+```bash
+uv run python src/build_vectorstore.py            # build index (idempotent) → vectorstore/chroma
+uv run python src/build_vectorstore.py --force    # rebuild dari nol
+uv run python src/build_vectorstore.py --check    # verifikasi buka-ulang / cek count
+uv run python src/evaluate_retrieval.py           # evaluasi → evaluation/retrieval_results.json
+```
+
+Catatan: `vectorstore/` tidak di-commit (gitignored) dan dapat dibuat ulang dari
+`chunks.jsonl` kapan saja. Konfigurasi & hasil tercatat di `experiment_config.yaml`
+(Bab 42).
+
+## 6. Hasil evaluasi retrieval (plan Bab 29–33)
+
+Dataset: 20 pertanyaan (5 easy / 8 medium / 4 hard / 3 out-of-domain) + ground truth
+`document_id` di `evaluation/questions.json`; detail per-query di
+`evaluation/retrieval_results.json`.
+
+| Metrik | Nilai |
+|---|---|
+| Recall@5 (document-level) | **17/17 = 100%** |
+| Mean recall support | 0.76 |
+| easy | 5/5 |
+| medium | 8/8 |
+| hard | 4/4 |
+
+Catatan: pada engine retrieval murni, pertanyaan **out-of-domain tetap menarik chunk**
+(top-k terisi dokumen yang tidak relevan); penolakan/tidak-menjawab adalah tanggung
+jawab **prompt guardrail Anggota 3** (plan Bab 14), bukan retriever.
+
+## 7. Keterbatasan
+
+- Retriever berbasis cosine similarity murni; tanpa hybrid BM25, metric learning,
+  atau reranker (sesuai plan Bab 59 — tidak dikerjakan).
+- `UU 6/2023` mendominasi index (2.426 dari 3.456 chunk) sehingga query yang
+  menyerempet topik omnibus cenderung menarik chunk dokumen ini.
+- Batas chunk dapat memotong Pasal; metadata `pasal/ayat` mengacu heading yang
+  memuat awal chunk, bukan seluruh isi chunk.
+- Retrieval bagus ≠ jawaban benar: validasi akhir jawaban bergantung pada generation
+  (Anggota 3).
+
+---
+
+## 8. Anggota 3 — LLM, RAG Pipeline & Evaluasi Generation
+
+### 8.1 Komponen
+
+| File | Fungsi |
+|---|---|
+| `src/config.py` | Konfigurasi sentral: model, temperature, path |
+| `src/generator.py` | Wrapper Gemini (`google.genai` SDK), retry + backoff |
+| `src/prompt.py` | System prompt, context builder, source parser, source attribution |
+| `src/rag_pipeline.py` | End-to-end `answer_question()` + logging JSONL |
+| `src/retriever.py` | Semantic retrieval — `retrieve(query, k)` + `debug_retrieve()` |
+| `app.py` | CLI demo interaktif + 4 skenario Bab 62 |
+| `app_streamlit.py` | GUI Streamlit chatbot (localhost:8501) |
+
+### 8.2 Model & Konfigurasi
+
+- **LLM**: Gemini 3.6 Flash (`gemini-3.6-flash`)
+- **Temperature**: 0.1 (konservatif, mengurangi hallucination)
+- **API key**: dari environment variable `GOOGLE_API_KEY`
+- **SDK**: `google-genai>=2.23.0` (bukan `google-generativeai` yang deprecated)
+- **Rate limit**: 20 req/hari per model (free tier). Script auto-retry dengan backoff.
+
+### 8.3 Cara Menjalankan
+
+```bash
+# Setup
+cp .env.example .env   # isi GOOGLE_API_KEY
+uv venv && uv pip install -r requirements.txt
+
+# Build vectorstore (jika belum ada)
+uv run python src/build_vectorstore.py --force
+
+# Demo interaktif
+uv run python app.py
+
+# Demo 4 skenario
+uv run python app.py --demo
+
+# Debug retrieval
+uv run python app.py --debug
+
+# GUI Streamlit (browser, localhost:8501)
+uv run streamlit run app_streamlit.py
+```
+
+### 8.4 Prompt Design
+
+- System prompt memaksa model hanya menggunakan context yang diberikan
+- Larangan fabrikasi pasal/sumber yang tidak ada dalam context
+- Out-of-context → `"Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia."`
+- Out-of-domain → penolakan dengan penjelasan di luar knowledge base
+- Source attribution: `[S1]`, `[S2]`, ... di dalam jawaban + footer sumber
+- Disclaimer: `"Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum."`
+
+### 8.5 Hasil Evaluasi Generation
+
+| Difficulty | n | Faithfulness | Relevance | Source Correctness | Completeness |
+|---|---|---|---|---|---|
+| easy | 5 | 1.6 | 1.8 | 2.0 | 1.2 |
+| medium | 8 | 1.8 | 1.9 | 2.0 | 1.4 |
+| hard | 4 | 1.5 | 1.8 | 2.0 | 1.2 |
+| out-of-domain | 3 | 2.0 | 2.0 | 2.0 | 2.0 |
+
+Catatan:
+- **Source correctness 2.0** di semua kategori: semua sumber yang dicantumkan benar-benar ada di retrieved chunks.
+- **OOD 2.0**: semua pertanyaan di luar knowledge base berhasil ditolak.
+- **Over-refusal diperbaiki**: `gemini-3.6-flash` menjawab Q14 (multi-dokumen PHK) dengan benar, tidak seperti `3.5-flash-lite` yang menolak.
+- Q16 (hubungan UU Cipta Kerja) ditolak karena memang tidak ada perbandingan eksplisit di korpus — ini benar (bukan over-refusal).
+- Skor adalah auto-draft (heuristik), perlu review manual.
+
+### 8.6 Output Files
+
+- `evaluation/evaluation_results.csv` — 20 baris, siap scoring manual
+- `evaluation/generation_outputs.json` — jawaban lengkap + retrieved chunks + metadata
+- `logs/query_log.jsonl` — log setiap query (timestamp, question, retrieved IDs, scores, answer)
+
+### 8.7 Known Limitations (Anggota 3)
+
+1. **Completeness rendah untuk easy questions**: Jawaban ringkas (definisi) skor completeness rendah karena heuristic word-count, tapi sebenarnya sudah benar dan cukup.
+2. **Rate limit**: 20 req/hari per model. Evaluasi 20Q memakan seluruh kuota harian.
+3. **Source parser**: Fix regex untuk format `[S1, S2]` (grouped citation) — sudah diperbaiki di sesi ini.
