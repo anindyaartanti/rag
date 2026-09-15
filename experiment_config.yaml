@@ -39,7 +39,7 @@ vector_db: "chroma"
 vectorstore_dir: "vectorstore/chroma"
 collection: "rag_ketenagakerjaan"
 hnsw_space: "cosine"
-chunk_baseline_indexed: "b"   # data/processed/chunks.jsonl (700/150, 3456 chunk)
+chunk_baseline_indexed: "a"   # data/processed/chunks_a.jsonl (500/100, 4725 chunk) — verifikasi Q09 lebih lengkap
 
 top_k: 5
 
@@ -52,5 +52,37 @@ retrieval_metrics:
   mean_recall_support: 0.7647
   results_file: "evaluation/retrieval_results.json"
 
-llm: "Gemini 2.5 Flash"
-temperature: 0-0.2
+llm: "Gemini 3.6 Flash"
+llm_model: "gemini-3.6-flash"
+llm_note: "gemini-3.5-flash-lite quota 20 req/hari per model; final lock ke 3.6-flash (quota reset via API key baru)"
+temperature: 0.1
+source_attribution: "[S1], [S2], ... identifier"
+disclaimer: "Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum."
+
+generation_evaluation:
+  total_questions: 20
+  in_domain: 17
+  out_of_domain: 3
+  source_match_in_domain: "17/17"
+  out_of_domain_rejected: "3/3"
+  model_used: "gemini-3.6-flash"   # eval chunks_a pakai 3.6-flash (3.5-flash-lite quota habis)
+  baseline_b_model: "gemini-3.5-flash-lite"
+  results_csv: "evaluation/evaluation_results.csv"
+  results_json: "evaluation/generation_outputs.json"
+  baseline_b_csv: "evaluation/evaluation_results_baseline_b.csv"
+  baseline_b_json: "evaluation/generation_outputs_baseline_b.json"
+  auto_score_summary:
+    chunks_a_3_6_flash:
+      easy: { F: 1.6, R: 1.8, S: 2.0, C: 1.2 }
+      medium: { F: 1.8, R: 1.9, S: 2.0, C: 1.4 }
+      hard: { F: 1.5, R: 1.8, S: 2.0, C: 1.2 }
+      out_of_domain: { F: 2.0, R: 2.0, S: 2.0, C: 2.0 }
+    chunks_b_3_5_flash_lite:
+      easy: { F: 1.6, R: 1.8, S: 2.0, C: 0.4 }
+      medium: { F: 2.0, R: 1.8, S: 2.0, C: 1.0 }
+      hard: { F: 1.0, R: 1.5, S: 2.0, C: 1.2 }
+      out_of_domain: { F: 2.0, R: 2.0, S: 2.0, C: 2.0 }
+  key_improvements:
+    - "Q09: chunks_a complete (a,b,c,d) vs chunks_b partial (only d)"
+    - "Q14: chunks_a multi-doc synthesis vs chunks_b false rejection"
+    - "Q16: both correctly reject (UU Cipta Kerja not in KB)"

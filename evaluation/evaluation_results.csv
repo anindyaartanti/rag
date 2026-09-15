@@ -1,0 +1,126 @@
+id,difficulty,question,answer,sources_cited,expected_sources,found_sources,source_match,is_rejected,faithfulness_score,relevance_score,source_correctness_score,completeness_score,notes
+Q01,easy,Apa yang dimaksud dengan hubungan kerja?,"Hubungan kerja adalah hubungan antara pengusaha dengan pekerja/buruh berdasarkan perjanjian kerja, yang mempunyai unsur pekerjaan, upah, dan perintah [S1], [S2]. 
+
+Hubungan kerja ini terjadi karena adanya perjanjian kerja antara pengusaha dan pekerja/buruh [S5].","[S1], [S2], [S5]",uu-13-2003,"pp-36-2021, uu-13-2003",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (4/6) | S:All 3 sources match retrieved docs | C:Partial answer (33 words)
+Q02,easy,Apa yang dimaksud dengan perjanjian kerja waktu tertentu (PKWT)?,"Perjanjian Kerja Waktu Tertentu (PKWT) adalah Perjanjian Kerja antara Pekerja/Buruh dengan Pengusaha untuk mengadakan Hubungan Kerja dalam waktu tertentu atau untuk pekerjaan tertentu [S1]. 
+
+PKWT didasarkan atas jangka waktu atau selesainya suatu pekerjaan tertentu dan tidak dapat diadakan untuk pekerjaan yang bersifat tetap [S2], [S4].","[S1], [S2], [S4]","pp-35-2021, uu-13-2003",pp-35-2021,YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (7/9) | S:All 3 sources match retrieved docs | C:Partial answer (45 words)
+Q03,easy,Apa yang dimaksud dengan upah minimum?,"Berdasarkan dokumen yang diberikan, **Upah minimum** adalah Upah bulanan terendah yang terdiri atas:
+a. Upah tanpa tunjangan; atau
+b. Upah pokok dan tunjangan tetap [S1].
+
+Beberapa ketentuan terkait Upah minimum antara lain:
+- **Penggunaan/Pemberlakuan:** Berlaku bagi Pekerja/Buruh dengan masa kerja kurang dari 1 (satu) tahun pada perusahaan yang bersangkutan [S4]. Pengusaha dilarang membayar Upah lebih rendah dari Upah minimum [S1].
+- **Komponen Pengeluaran/Dasar Penetapan:** 
+  - Berdasarkan **UU No. 13 Tahun 2003**, Upah minimum diarahkan kepada pencapaian kebutuhan hidup layak [S2] serta memperhatikan produktivitas dan pertumbuhan ekonomi [S3]. 
+  - Berdasarkan **PP No. 36 Tahun 2021**, Upah minimum ditetapkan berdasarkan kondisi ekonomi dan ketenagakerjaan [S4].","[S1], [S2], [S3], [S4]","pp-36-2021, uu-13-2003","uu-13-2003, pp-36-2021",YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (4/6) | S:All 4 sources match retrieved docs | C:Detailed answer (103 words)
+Q04,easy,Apa yang dimaksud dengan serikat pekerja/serikat buruh?,"Berdasarkan dokumen yang tersedia, serikat pekerja/serikat buruh dijelaskan melalui fungsi, bentuk, dan ketentuan pembentukannya sebagai berikut:
+
+1. **Fungsi dan Peran:**
+   * Merupakan sarana untuk memperjuangkan, melindungi, dan membela kepentingan serta meningkatkan kesejahteraan pekerja/buruh dan keluarganya [S3].
+   * Merupakan sarana untuk memperjuangkan kepentingan pekerja/buruh dan menciptakan hubungan industrial yang harmonis, dinamis, dan berkeadilan [S2].
+
+2. **Jenis/Bentuk Spesifik:**
+   * **Serikat pekerja/serikat buruh di luar perusahaan:** Serikat pekerja/serikat buruh yang didirikan oleh para pekerja/serikat yang tidak bekerja di perusahaan [S4].
+   * **Serikat pekerja/serikat buruh bentuk lain:** Serikat pekerja/serikat buruh yang dibentuk tidak berdasarkan satu sektor usaha tertentu atau jenis pekerjaan tertentu [S1].
+
+3. **Ketentuan Pembentukan:**
+   * Dibentuk oleh sekurang-kurangnya 10 (sepuluh) orang pekerja/buruh [S5].","[S1], [S2], [S3], [S4], [S5]",uu-21-2000,uu-21-2000,YES,YES,0,1,2,1,"F:REJECTED but source_match=YES (over-refusal) | R:Rejected - partial relevance (context insufficient) | S:Rejected, source check N/A | C:Rejected - completeness N/A (context insufficient)"
+Q05,easy,Berapa batas maksimum waktu kerja lembur dalam sehari?,"Batas maksimum waktu kerja lembur dalam sehari memiliki ketentuan yang berbeda berdasarkan dokumen regulasi yang tersedia:
+
+1. **Paling lama 4 (empat) jam dalam 1 (satu) hari**, sebagaimana diatur dalam Peraturan Pemerintah Nomor 35 Tahun 2021 [S1] dan Undang-Undang Nomor 6 Tahun 2023 [S3].
+2. **Paling banyak 3 (tiga) jam dalam 1 (satu) hari**, sebagaimana diatur dalam Undang-Undang Nomor 13 Tahun 2003 [S4].","[S1], [S2], [S3], [S4]",uu-13-2003,"uu-6-2023, pp-35-2021, uu-13-2003",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (7/8) | S:All 4 sources match retrieved docs | C:Partial answer (62 words)
+Q06,medium,Apakah PKWT dapat diperpanjang dan berapa lama keseluruhan masa kerjanya?,"Ya, PKWT dapat diperpanjang apabila jangka waktu PKWT akan berakhir dan pekerjaan yang dilaksanakan belum selesai [S2]. 
+
+Ketentuan perpanjangan dan durasi keseluruhan masa kerjanya adalah sebagai berikut:
+1. **PKWT berdasarkan jangka waktu:** Perpanjangan dilakukan sesuai kesepakatan antara Pengusaha dengan Pekerja/Buruh, dengan ketentuan jangka waktu keseluruhan PKWT beserta perpanjangannya tidak lebih dari 5 (lima) tahun [S1].
+2. **PKWT berdasarkan selesainya suatu pekerjaan tertentu:** Perpanjangan dilakukan sampai batas waktu tertentu hingga selesainya pekerjaan tersebut [S4].
+
+Masa kerja Pekerja/Buruh dalam hal perpanjangan jangka waktu PKWT tetap dihitung sejak terjadinya Hubungan Kerja berdasarkan PKWT [S1], [S4].","[S1], [S2], [S4]","pp-35-2021, uu-13-2003",pp-35-2021,YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (7/10) | S:All 3 sources match retrieved docs | C:Partial answer (92 words)
+Q07,medium,Apa saja hak pekerja/buruh yang harus diterima ketika terjadi PHK?,"Dalam hal terjadi Pemutusan Hubungan Kerja (PHK), pengusaha diwajibkan membayar hak-hak pekerja/buruh yang meliputi [S3]:
+1. **Uang pesangon** [S3]
+2. **Uang penghargaan masa kerja** [S3]
+3. **Uang penggantian hak** yang seharusnya diterima [S3]
+
+Besaran hak yang diterima pekerja/buruh dapat berbeda tergantung kondisi/alasan PHK:
+* **Pekerja/buruh tidak bersedia melanjutkan hubungan kerja** karena perubahan status, penggabungan, peleburan, atau perubahan kepemilikan perusahaan, berhak atas [S5]:
+  * Uang pesangon sebesar 1 (satu) kali ketentuan Pasal 156 ayat (2) [S5].
+  * Uang penghargaan masa kerja 1 (satu) kali ketentuan Pasal 156 ayat (3) [S5].
+  * Uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S5].
+* **Pengusaha tidak bersedia menerima pekerja/buruh** di perusahaannya karena perubahan status, penggabungan, atau peleburan perusahaan, pekerja/buruh berhak atas [S1]:
+  * Uang pesangon sebesar 2 (dua) kali ketentuan Pasal 156 ayat (2) [S1].
+  * Uang penghargaan masa kerja 1 (satu) kali ketentuan Pasal 156 ayat (3) [S1].
+  * Uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S1].","[S1], [S2], [S3], [S5]","uu-13-2003, pp-35-2021",uu-13-2003,YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (7/11) | S:All 4 sources match retrieved docs | C:Detailed answer (157 words)
+Q08,medium,Bagaimana cara menghitung besaran uang pesangon?,"Berdasarkan dokumen yang tersedia, cara menghitung besaran uang pesangon dilakukan dengan memperhatikan komponen upah dasar dan ketentuan jumlah bulan upah/koefisien sesuai masa kerja dan alasan PHK:
+
+1. **Komponen Upah Dasar Perhitungan:**
+   * Komponen upah yang digunakan terdiri dari **Upah pokok** dan **tunjangan tetap** [S1].
+   * Jika upah dibayarkan secara **harian**, upah sebulan dihitung **30 dikalikan upah sehari** [S4].
+   * Jika upah dibayarkan berdasarkan **satuan hasil**, upah sebulan dihitung dari **rata-rata penghasilan dalam 12 bulan terakhir** [S4].
+   * Jika upah sebulan lebih rendah dari **Upah minimum**, maka dasar perhitungan yang digunakan adalah **Upah minimum** yang berlaku [S4].
+
+2. **Ketentuan Besaran Pesangon:**
+   * Untuk masa kerja **kurang dari 1 (satu) tahun**, besaran uang pesangon paling sedikit adalah **1 (satu) bulan upah** [S5].
+   * Besaran perkalian/koefisien pesangon dapat menyesuaikan kondisi/alasan PHK tertentu, seperti sebesar **0,5 (nol koma lima) kali** ketentuan untuk alasan pengambilalihan perusahaan atau efisiensi karena perusahaan mengalami kerugian [S2].","[S1], [S2], [S4], [S5]","pp-35-2021, uu-13-2003","uu-6-2023, pp-35-2021, uu-13-2003, pp-36-2021",YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (5/6) | S:All 4 sources match retrieved docs | C:Detailed answer (148 words)
+Q09,medium,Apa saja syarat sah perjanjian kerja?,"Berdasarkan dokumen yang tersedia, perjanjian kerja dibuat atas dasar atau syarat sebagai berikut:
+
+1. Kesepakatan kedua belah pihak;
+2. Kemampuan atau kecakapan melakukan perbuatan hukum;
+3. Adanya pekerjaan yang diperjanjikan; dan
+4. Pekerjaan yang diperjanjikan tidak bertentangan dengan ketertiban umum, kesusilaan, dan peraturan perundang-undangan yang berlaku.
+
+Sumber: [S3]",[S3],uu-13-2003,"uu-13-2003, pp-36-2021",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (3/6) | S:All 1 sources match retrieved docs | C:Partial answer (48 words)
+Q10,medium,Bagaimana tata cara penggunaan tenaga kerja asing (TKA)?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,"permenaker-10-2018, uu-13-2003",permenaker-10-2018,YES,YES,0,1,2,1,"F:REJECTED but source_match=YES (over-refusal) | R:Rejected - partial relevance (context insufficient) | S:Rejected, source check N/A | C:Rejected - completeness N/A (context insufficient)"
+Q11,medium,Apa saja manfaat program Jaminan Kehilangan Pekerjaan (JKP)?,"Manfaat program Jaminan Kehilangan Pekerjaan (JKP) meliputi:
+1. **Uang tunai** [S1, S3, S4], yang diberikan paling banyak 6 (enam) bulan upah [S4].
+2. **Akses informasi pasar kerja** [S1, S3, S4].
+3. **Pelatihan kerja** [S1, S3, S4].
+
+Sumber: [S1], [S3], [S4]","[S1], [S2], [S3], [S4]",pp-37-2021,"uu-6-2023, pp-37-2021",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (6/8) | S:All 4 sources match retrieved docs | C:Partial answer (40 words)
+Q12,medium,Bagaimana penyelesaian perselisihan hubungan industrial melalui mediasi?,"Penyelesaian perselisihan hubungan industrial melalui mediasi dilaksanakan berdasarkan ketentuan berikut:
+
+1. **Pengertian dan Jenis Perselisihan:** Mediasi merupakan penyelesaian perselisihan hak, perselisihan kepentingan, perselisihan pemutusan hubungan kerja (PHK), dan perselisihan antar serikat pekerja/serikat buruh hanya dalam satu perusahaan melalui musyawarah yang ditengahi oleh satu atau lebih mediator netral [S1].
+2. **Pelaksana Mediasi:** Penyelesaian dilakukan oleh mediator yang bertugas mempertemukan kepentingan kedua belah pihak yang berselisih. Mediator ini berada di setiap kantor instansi yang bertanggung jawab di bidang ketenagakerjaan Kabupaten/Kota [S2, S4].
+3. **Persyaratan Sebelum Pengadilan:** Apabila kedua belah pihak tidak menyepakati penyelesaian melalui konsiliasi atau arbitrase, maka perselisihan wajib terlebih dahulu diselesaikan melalui mediasi sebelum diajukan ke Pengadilan Hubungan Industrial [S3].
+4. **Jangka Waktu Penyelesaian:** Mediator menyelesaikan tugasnya dalam waktu selambat-lambatnya 30 (tiga puluh) hari kerja terhitung sejak menerima perselisihan [S5].
+5. **Tindak Lanjut Jika Ditolak:** Apabila anjuran tertulis dari mediasi ditolak oleh salah satu atau kedua belah pihak, para pihak atau salah satu pihak dapat melanjutkan penyelesaian ke Pengadilan Hubungan Industrial pada Pengadilan Negeri setempat dengan mengajukan gugatan [S5].","[S1], [S2], [S3], [S4], [S5]",uu-2-2004,uu-2-2004,YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (6/7) | S:All 5 sources match retrieved docs | C:Detailed answer (169 words)
+Q13,medium,Apa yang dimaksud dengan struktur dan skala upah?,"Berdasarkan dokumen yang tersedia:
+
+* **Struktur Upah** adalah susunan tingkat upah dari yang terendah sampai dengan yang tertinggi atau dari yang tertinggi sampai dengan yang terendah [S1].
+* **Skala Upah** adalah kisaran nilai nominal upah dari yang terkecil sampai dengan yang terbesar untuk setiap golongan jabatan [S1].",[S1],"permenaker-1-2017, pp-36-2021","permenaker-1-2017, pp-36-2021",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (5/8) | S:All 1 sources match retrieved docs | C:Partial answer (47 words)
+Q14,hard,"Bagaimana ketentuan PHK menurut regulasi yang tersedia, termasuk hak-hak yang timbul?","Berdasarkan dokumen regulasi yang tersedia, ketentuan mengenai Pemutusan Hubungan Kerja (PHK) dan hak-hak yang timbul diatur sebagai berikut:
+
+1. **Hak Pekerja/Buruh dalam Keadaan/Kejadian Tertentu:**
+   Dalam keadaan atau kejadian tertentu (seperti bencana alam, kerusuhan sosial, atau gangguan keamanan), hak-hak yang diberikan kepada Pekerja/Buruh sesuai peraturan perundang-undangan, Perjanjian Kerja, Peraturan Perusahaan, atau Perjanjian Kerja Bersama adalah hak-hak yang harus diberikan yang lebih baik dan menguntungkan Pekerja/Buruh yang bersangkutan [S1].
+
+2. **Hak Pekerja/Buruh Jika Pengusaha Tidak Mengikutsertakan dalam Program JKP:**
+   Apabila terjadi PHK dan pengusaha tidak mengikutsertakan Pekerja/Buruh dalam program JKP (Jaminan Kehilangan Pekerjaan), pengusaha wajib memenuhi hak Pekerja/Buruh berupa [S3]:
+   * Manfaat uang tunai yang diberikan secara sekaligus [S3].
+   * Manfaat pelatihan kerja [S3].
+
+---
+DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.","[S1], [S2], [S3]","uu-13-2003, uu-6-2023, pp-35-2021","uu-6-2023, uu-40-2004, pp-37-2021, uu-13-2003",YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (7/10) | S:All 3 sources match retrieved docs | C:Detailed answer (127 words)
+Q15,hard,Apa perbedaan antara PKWT dan PKWTT?,"Berdasarkan dokumen yang tersedia, perbedaan antara PKWT dan PKWTT adalah sebagai berikut:
+
+1. **PKWT (Perjanjian Kerja Waktu Tertentu):** 
+   - Merupakan perjanjian kerja antara Pekerja/Buruh dengan Pengusaha untuk mengadakan hubungan kerja dalam **waktu tertentu** atau untuk **pekerjaan tertentu** [S1].
+   - Didasarkan atas jangka waktu atau selesainya suatu pekerjaan tertentu [S2].
+   - Tidak dapat diadakan untuk pekerjaan yang bersifat tetap [S2].
+
+2. **PKWTT (Perjanjian Kerja Waktu Tidak Tertentu):** 
+   - Merupakan perjanjian kerja yang dibuat untuk **waktu tidak tertentu** [S1], [S2].","[S1], [S2]","uu-13-2003, pp-35-2021",pp-35-2021,YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (5/6) | S:All 2 sources match retrieved docs | C:Partial answer (78 words)
+Q16,hard,Bagaimana hubungan antara UU Cipta Kerja dan UU 13/2003 terkait pengupahan dan pesangon?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,"uu-6-2023, uu-13-2003, pp-35-2021","permenaker-1-2017, uu-6-2023, pp-36-2021",YES,YES,0,1,2,1,"F:REJECTED but source_match=YES (over-refusal) | R:Rejected - partial relevance (context insufficient) | S:Rejected, source check N/A | C:Rejected - completeness N/A (context insufficient)"
+Q17,hard,Apa saja program jaminan sosial ketenagakerjaan dan badan yang menyelenggarakannya?,"Berdasarkan dokumen yang disediakan, berikut adalah program jaminan sosial dan badan penyelenggaranya yang tercantum dalam teks:
+
+**Program Jaminan Sosial:**
+1. **Jaminan Kehilangan Pekerjaan**: Hak bagi pekerja/buruh yang mengalami pemutusan hubungan kerja [S2].
+2. **Jaminan Kesehatan**: Program jaminan kesehatan [S4].
+3. **Jaminan Sosial Pekerja Migran Indonesia** [S5].
+
+**Badan Penyelenggara:**
+1. **BPJS Ketenagakerjaan (Badan Penyelenggara Jaminan Sosial Ketenagakerjaan)** dan **Pemerintah Pusat**: Menyelenggarakan program Jaminan Kehilangan Pekerjaan [S2], [S4].
+2. **BPJS Kesehatan (Badan Penyelenggara Jaminan Sosial Kesehatan)**: Menyelenggarakan program Jaminan Kesehatan [S4].
+3. **Badan Penyelenggara Jaminan Sosial**: Menyelenggarakan program Jaminan Sosial Pekerja Migran Indonesia [S5].","[S2], [S3], [S4], [S5]","uu-40-2004, uu-24-2011, pp-37-2021","uu-6-2023, pp-37-2021, uu-40-2004",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (7/10) | S:All 4 sources match retrieved docs | C:Partial answer (92 words)
+Q18,out-of-domain,Bagaimana ketentuan pajak penghasilan bagi perusahaan tambang?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,,"uu-6-2023, pp-36-2021",NO,YES,2,2,2,2,"F:OOD correctly rejected | R:OOD - relevance N/A, rejection is correct behavior | S:OOD correctly rejected, no sources needed | C:OOD correctly rejected"
+Q19,out-of-domain,Apa saja syarat pembayaran dividen oleh BUMN?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,,"uu-6-2023, pp-35-2021, pp-37-2021, uu-13-2003",NO,YES,2,2,2,2,"F:OOD correctly rejected | R:OOD - relevance N/A, rejection is correct behavior | S:OOD correctly rejected, no sources needed | C:OOD correctly rejected"
+Q20,out-of-domain,Siapa presiden Indonesia saat ini?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,,"uu-6-2023, uu-13-2003, uu-21-2000, pp-36-2021",NO,YES,2,2,2,2,"F:OOD correctly rejected | R:OOD - relevance N/A, rejection is correct behavior | S:OOD correctly rejected, no sources needed | C:OOD correctly rejected"

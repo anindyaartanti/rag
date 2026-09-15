@@ -265,3 +265,87 @@ jawab **prompt guardrail Anggota 3** (plan Bab 14), bukan retriever.
   memuat awal chunk, bukan seluruh isi chunk.
 - Retrieval bagus ≠ jawaban benar: validasi akhir jawaban bergantung pada generation
   (Anggota 3).
+
+---
+
+## 8. Anggota 3 — LLM, RAG Pipeline & Evaluasi Generation
+
+### 8.1 Komponen
+
+| File | Fungsi |
+|---|---|
+| `src/config.py` | Konfigurasi sentral: model, temperature, path |
+| `src/generator.py` | Wrapper Gemini (`google.genai` SDK), retry + backoff |
+| `src/prompt.py` | System prompt, context builder, source parser, source attribution |
+| `src/rag_pipeline.py` | End-to-end `answer_question()` + logging JSONL |
+| `src/retriever.py` | Semantic retrieval — `retrieve(query, k)` + `debug_retrieve()` |
+| `app.py` | CLI demo interaktif + 4 skenario Bab 62 |
+| `app_streamlit.py` | GUI Streamlit chatbot (localhost:8501) |
+
+### 8.2 Model & Konfigurasi
+
+- **LLM**: Gemini 3.6 Flash (`gemini-3.6-flash`)
+- **Temperature**: 0.1 (konservatif, mengurangi hallucination)
+- **API key**: dari environment variable `GOOGLE_API_KEY`
+- **SDK**: `google-genai>=2.23.0` (bukan `google-generativeai` yang deprecated)
+- **Rate limit**: 20 req/hari per model (free tier). Script auto-retry dengan backoff.
+
+### 8.3 Cara Menjalankan
+
+```bash
+# Setup
+cp .env.example .env   # isi GOOGLE_API_KEY
+uv venv && uv pip install -r requirements.txt
+
+# Build vectorstore (jika belum ada)
+uv run python src/build_vectorstore.py --force
+
+# Demo interaktif
+uv run python app.py
+
+# Demo 4 skenario
+uv run python app.py --demo
+
+# Debug retrieval
+uv run python app.py --debug
+
+# GUI Streamlit (browser, localhost:8501)
+uv run streamlit run app_streamlit.py
+```
+
+### 8.4 Prompt Design
+
+- System prompt memaksa model hanya menggunakan context yang diberikan
+- Larangan fabrikasi pasal/sumber yang tidak ada dalam context
+- Out-of-context → `"Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia."`
+- Out-of-domain → penolakan dengan penjelasan di luar knowledge base
+- Source attribution: `[S1]`, `[S2]`, ... di dalam jawaban + footer sumber
+- Disclaimer: `"Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum."`
+
+### 8.5 Hasil Evaluasi Generation
+
+| Difficulty | n | Faithfulness | Relevance | Source Correctness | Completeness |
+|---|---|---|---|---|---|
+| easy | 5 | 1.6 | 1.8 | 2.0 | 1.2 |
+| medium | 8 | 1.8 | 1.9 | 2.0 | 1.4 |
+| hard | 4 | 1.5 | 1.8 | 2.0 | 1.2 |
+| out-of-domain | 3 | 2.0 | 2.0 | 2.0 | 2.0 |
+
+Catatan:
+- **Source correctness 2.0** di semua kategori: semua sumber yang dicantumkan benar-benar ada di retrieved chunks.
+- **OOD 2.0**: semua pertanyaan di luar knowledge base berhasil ditolak.
+- **Over-refusal diperbaiki**: `gemini-3.6-flash` menjawab Q14 (multi-dokumen PHK) dengan benar, tidak seperti `3.5-flash-lite` yang menolak.
+- Q16 (hubungan UU Cipta Kerja) ditolak karena memang tidak ada perbandingan eksplisit di korpus — ini benar (bukan over-refusal).
+- Skor adalah auto-draft (heuristik), perlu review manual.
+
+### 8.6 Output Files
+
+- `evaluation/evaluation_results.csv` — 20 baris, siap scoring manual
+- `evaluation/generation_outputs.json` — jawaban lengkap + retrieved chunks + metadata
+- `logs/query_log.jsonl` — log setiap query (timestamp, question, retrieved IDs, scores, answer)
+
+### 8.7 Known Limitations (Anggota 3)
+
+1. **Completeness rendah untuk easy questions**: Jawaban ringkas (definisi) skor completeness rendah karena heuristic word-count, tapi sebenarnya sudah benar dan cukup.
+2. **Rate limit**: 20 req/hari per model. Evaluasi 20Q memakan seluruh kuota harian.
+3. **Source parser**: Fix regex untuk format `[S1, S2]` (grouped citation) — sudah diperbaiki di sesi ini.

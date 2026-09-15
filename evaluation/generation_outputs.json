@@ -1,0 +1,1559 @@
+[
+  {
+    "id": "Q01",
+    "difficulty": "easy",
+    "question": "Apa yang dimaksud dengan hubungan kerja?",
+    "expected_sources": [
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "pp-36-2021",
+      "uu-13-2003"
+    ],
+    "source_match": true,
+    "answer": "Hubungan kerja adalah hubungan antara pengusaha dengan pekerja/buruh berdasarkan perjanjian kerja, yang mempunyai unsur pekerjaan, upah, dan perintah [S1], [S2]. \n\nHubungan kerja ini terjadi karena adanya perjanjian kerja antara pengusaha dan pekerja/buruh [S5].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "36",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 36 Tahun 2021 Tentang Pengupahan",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S5]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 48",
+        "bab": "BAB VIII"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-13-2003-0013",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 1",
+        "score": 0.8675,
+        "text_preview": "14. Perjanjian kerja adalah perjanjian antara pekerja/buruh dengan pengusaha atau pemberi kerja yang memuat\nsyaratsyarat kerja, hak, dan kewajiban para pihak.\n15. Hubungan kerja adalah hubungan antara"
+      },
+      {
+        "chunk_id": "pp-36-2021-0007",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8608,
+        "text_preview": "merupakan hasil perundingan antara S erikat\nPekerja/Serikat Buruh atau beberapa Serikat\nPekerja/Serikat Buruh yang tercatat pada instansi\nyang bertanggung jawab di bidang ketenagakerjaan\ndengan Pengus"
+      },
+      {
+        "chunk_id": "uu-13-2003-0143",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 102",
+        "score": 0.8452,
+        "text_preview": "menjalankan pekerjaan sesuai dengan kewajibannya, menjaga ketertiban demi kelangsungan produksi, menyalurkan\naspirasi secara demokratis, mengembangkan keterampilan, dan keahliannya serta ikut memajuka"
+      },
+      {
+        "chunk_id": "uu-13-2003-0090",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 65",
+        "score": 0.8386,
+        "text_preview": "secara tertulis antara perusahaan lain dan pekerja/buruh yang dipekerjakannya.\n(7) Hubungan kerja sebagaimana dimaksud dalam ayat (6) dapat didasarkan atas perjanjian kerja waktu tidak tertentu atau\np"
+      },
+      {
+        "chunk_id": "uu-13-2003-0069",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 48",
+        "score": 0.8376,
+        "text_preview": "hubungan kerjanya berakhir.\nPasal 49\nKetentuan mengenai penggunaan tenaga kerja asing serta pelaksanaan pendidikan dan pelatihan tenaga kerja\npendamping diatur dengan Keputusan Presiden.\nBAB IX\nHUBUNG"
+      }
+    ],
+    "elapsed_seconds": 5.87,
+    "is_rejected": false
+  },
+  {
+    "id": "Q02",
+    "difficulty": "easy",
+    "question": "Apa yang dimaksud dengan perjanjian kerja waktu tertentu (PKWT)?",
+    "expected_sources": [
+      "pp-35-2021",
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "pp-35-2021"
+    ],
+    "source_match": true,
+    "answer": "Perjanjian Kerja Waktu Tertentu (PKWT) adalah Perjanjian Kerja antara Pekerja/Buruh dengan Pengusaha untuk mengadakan Hubungan Kerja dalam waktu tertentu atau untuk pekerjaan tertentu [S1]. \n\nPKWT didasarkan atas jangka waktu atau selesainya suatu pekerjaan tertentu dan tidak dapat diadakan untuk pekerjaan yang bersifat tetap [S2], [S4].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 2",
+        "bab": "BAB II"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 4",
+        "bab": "BAB II"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-35-2021-0010",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 1",
+        "score": 0.9151,
+        "text_preview": "Lembur.\n9. Perjanjian Kerja adalah perjanjian antara\nPekerja/Buruh dengan Pengusaha atau pemberi\nkerja yang memuat syarat -syarat kerja, hak, dan\nkewajiban para pihak.\n10. Perjanjian Kerja Waktu Te rt"
+      },
+      {
+        "chunk_id": "pp-35-2021-0016",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 2",
+        "score": 0.8901,
+        "text_preview": "dilaksanakan sesuai dengan ketentuan peraturan\nperundang-undangan.\n(4) Perjanjian Kerja dibuat untuk waktu tertentu atau\nuntuk waktu tidak tertentu.\nPasal 3\nPKWTT dilaksanakan sesuai dengan ketentuan\n"
+      },
+      {
+        "chunk_id": "pp-35-2021-0011",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 1",
+        "score": 0.887,
+        "text_preview": "11. Perjanjian Kerja Waktu Tidak Tertentu yang\nselanjutnya disingkat PK WTT adalah Perjanjian\nKerja antara Pekerja/Buruh dengan Pengusaha\nuntuk mengadakan Hubungan Kerja yang bersifat\ntetap.\n12. Perat"
+      },
+      {
+        "chunk_id": "pp-35-2021-0017",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 4",
+        "score": 0.8829,
+        "text_preview": "(2) PKWT tidak dapat diadakan untuk pekerjaan yang\nbersifat tetap.\nPasal 5\n(1) PKWT berdasarkan jangka waktu sebagaimana\ndimaksud dalam Pasal 4 ayat (1) huruf a dibuat\nuntuk pekerjaan tertentu yaitu:\n"
+      },
+      {
+        "chunk_id": "pp-35-2021-0023",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 9",
+        "score": 0.8796,
+        "text_preview": "Pasal 9\n(1) PKWT berdasarkan selesainya suatu pekerjaan\ntertentu sebagaimana dimaksud dalam Pasal 5\nayat (2) didasarkan atas kesepakatan para pihak\nyang dituangkan dalam Perjanjian Kerja.\n(2) Kesepaka"
+      }
+    ],
+    "elapsed_seconds": 6.14,
+    "is_rejected": false
+  },
+  {
+    "id": "Q03",
+    "difficulty": "easy",
+    "question": "Apa yang dimaksud dengan upah minimum?",
+    "expected_sources": [
+      "pp-36-2021",
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "uu-13-2003",
+      "pp-36-2021"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang diberikan, **Upah minimum** adalah Upah bulanan terendah yang terdiri atas:\na. Upah tanpa tunjangan; atau\nb. Upah pokok dan tunjangan tetap [S1].\n\nBeberapa ketentuan terkait Upah minimum antara lain:\n- **Penggunaan/Pemberlakuan:** Berlaku bagi Pekerja/Buruh dengan masa kerja kurang dari 1 (satu) tahun pada perusahaan yang bersangkutan [S4]. Pengusaha dilarang membayar Upah lebih rendah dari Upah minimum [S1].\n- **Komponen Pengeluaran/Dasar Penetapan:** \n  - Berdasarkan **UU No. 13 Tahun 2003**, Upah minimum diarahkan kepada pencapaian kebutuhan hidup layak [S2] serta memperhatikan produktivitas dan pertumbuhan ekonomi [S3]. \n  - Berdasarkan **PP No. 36 Tahun 2021**, Upah minimum ditetapkan berdasarkan kondisi ekonomi dan ketenagakerjaan [S4].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "36",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 36 Tahun 2021 Tentang Pengupahan",
+        "pasal": "Pasal 22",
+        "bab": "BAB V"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 89",
+        "bab": "BAB X"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 88",
+        "bab": "BAB X"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "36",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 36 Tahun 2021 Tentang Pengupahan",
+        "pasal": "Pasal 24",
+        "bab": "BAB V"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-36-2021-0034",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 22",
+        "score": 0.8819,
+        "text_preview": "UPAH MINIMUM\nBagian Kesatu\nUmum\nPasal 23\n(1) Upah minimum merupakan Upah bulanan terendah\nyaitu:\na. Upah tanpa tunjangan; atau\nb. Upah pokok dan tunjangan tetap.\n(2) Dalam hal komponen Upah di Perusah"
+      },
+      {
+        "chunk_id": "uu-13-2003-0122",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 89",
+        "score": 0.8735,
+        "text_preview": "a. upah minimum berdasarkan wilayah provinsi atau kabupaten/kota;\nb. upah minimum berdasarkan sektor pada wilayah provinsi atau kabupaten/kota.\n(2) Upah minimum sebagaimana dimaksud dalam ayat (1) dia"
+      },
+      {
+        "chunk_id": "uu-13-2003-0121",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 88",
+        "score": 0.8672,
+        "text_preview": "j. upah untuk pembayaran pesangon; dan\nk. upah untuk perhitungan pajak penghasilan.\n(4) Pemerintah menetapkan upah minimum sebagaimana dimaksud dalam ayat (3) huruf a berdasarkan kebutuhan hidup\nlayak"
+      },
+      {
+        "chunk_id": "pp-36-2021-0035",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 24",
+        "score": 0.8644,
+        "text_preview": "23 ayat (1) berlaku bagi Pekerja/Buruh dengan masa\nkerja kurang dari 1 (satu) tahun pada Per usahaan\nyang bersangkutan.\n(2) Upah bagi Pekerja/Buruh dengan masa kerja 1 (satu)\ntahun atau lebih berpedom"
+      },
+      {
+        "chunk_id": "pp-36-2021-0058",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 35",
+        "score": 0.8634,
+        "text_preview": "KECIL\nPasal 36\n(1) Ketentuan Upah minimum sebagaimana dimaksud\ndalam Pasal 23 sampai dengan Pasal 35 dikecualikan\nbagi usaha mikro dan usaha kecil.\n(2) Upah pada usaha mikro dan usaha kecil ditetapkan"
+      }
+    ],
+    "elapsed_seconds": 8.42,
+    "is_rejected": false
+  },
+  {
+    "id": "Q04",
+    "difficulty": "easy",
+    "question": "Apa yang dimaksud dengan serikat pekerja/serikat buruh?",
+    "expected_sources": [
+      "uu-21-2000"
+    ],
+    "found_doc_ids": [
+      "uu-21-2000"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang tersedia, serikat pekerja/serikat buruh dijelaskan melalui fungsi, bentuk, dan ketentuan pembentukannya sebagai berikut:\n\n1. **Fungsi dan Peran:**\n   * Merupakan sarana untuk memperjuangkan, melindungi, dan membela kepentingan serta meningkatkan kesejahteraan pekerja/buruh dan keluarganya [S3].\n   * Merupakan sarana untuk memperjuangkan kepentingan pekerja/buruh dan menciptakan hubungan industrial yang harmonis, dinamis, dan berkeadilan [S2].\n\n2. **Jenis/Bentuk Spesifik:**\n   * **Serikat pekerja/serikat buruh di luar perusahaan:** Serikat pekerja/serikat buruh yang didirikan oleh para pekerja/serikat yang tidak bekerja di perusahaan [S4].\n   * **Serikat pekerja/serikat buruh bentuk lain:** Serikat pekerja/serikat buruh yang dibentuk tidak berdasarkan satu sektor usaha tertentu atau jenis pekerjaan tertentu [S1].\n\n3. **Ketentuan Pembentukan:**\n   * Dibentuk oleh sekurang-kurangnya 10 (sepuluh) orang pekerja/buruh [S5].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "21",
+        "document_year": "2000",
+        "title": "Undang-undang Nomor 21 Tahun 2000 Tentang Serikat Pekerja/serikat Buruh",
+        "pasal": "Pasal 10",
+        "bab": "BAB XV"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "21",
+        "document_year": "2000",
+        "title": "Undang-undang Nomor 21 Tahun 2000 Tentang Serikat Pekerja/serikat Buruh",
+        "pasal": "Pasal 47",
+        "bab": "BAB XV"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "21",
+        "document_year": "2000",
+        "title": "Undang-undang Nomor 21 Tahun 2000 Tentang Serikat Pekerja/serikat Buruh",
+        "pasal": "Pasal 47",
+        "bab": "BAB XV"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "21",
+        "document_year": "2000",
+        "title": "Undang-undang Nomor 21 Tahun 2000 Tentang Serikat Pekerja/serikat Buruh",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S5]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "21",
+        "document_year": "2000",
+        "title": "Undang-undang Nomor 21 Tahun 2000 Tentang Serikat Pekerja/serikat Buruh",
+        "pasal": "Pasal 5",
+        "bab": "BAB III"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-21-2000-0078",
+        "document_id": "uu-21-2000",
+        "pasal": "Pasal 10",
+        "score": 0.8995,
+        "text_preview": "- Yang dimaksud dengan serikat pekerja/serikat buruh\nbentuk lain adalah suatu serikat pekerja/serik at buruh yang dibentuk\ntidak berdasarkan satu sektor usaha tertentu atau jenis pekerjaan\nPRESIDEN\nRE"
+      },
+      {
+        "chunk_id": "uu-21-2000-0066",
+        "document_id": "uu-21-2000",
+        "pasal": "Pasal 47",
+        "score": 0.8892,
+        "text_preview": "perusahaan, dan meningkatkan kesejahteraan masyarakat Indonesia pada\numumnya. Sehubungan deng an hal itu, serikat pekerja/serikat buruh\nmerupakan sarana untuk memperjuangkan kepentingan pekerja/buruh\n"
+      },
+      {
+        "chunk_id": "uu-21-2000-0062",
+        "document_id": "uu-21-2000",
+        "pasal": "Pasal 47",
+        "score": 0.8873,
+        "text_preview": "setiap pekerja/buruh harus diberikan kesempatan yang seluas -luasnya\nmendirikan dan menjadi anggota serikat pekerja/serikat buruh. Serikat\npekerja/serikat buruh berfungsi sebagai sarana untuk memperju"
+      },
+      {
+        "chunk_id": "uu-21-2000-0006",
+        "document_id": "uu-21-2000",
+        "pasal": "Pasal 1",
+        "score": 0.8797,
+        "text_preview": "3. Serikat pekerja/serikat buruh di luar perusahaan adalah serikat\npekerja/serikat buruh yang didirikan oleh para pekerja/serikat yang\ntidak bekerja di perusahaan.\n4. Federasi serikat pekerja/serikat "
+      },
+      {
+        "chunk_id": "uu-21-2000-0015",
+        "document_id": "uu-21-2000",
+        "pasal": "Pasal 5",
+        "score": 0.8767,
+        "text_preview": "(1) Setiap pekerja/buruh berhak membentuk dan menjadi anggota serikat\npekerja/serikat buruh.\n(2) Serikat pekerja/serikat buruh dibentuk oleh sekurang -kurangnya 10\n(sepuluh) orang pekerja/buruh.\nPasal"
+      }
+    ],
+    "elapsed_seconds": 12.96,
+    "is_rejected": true
+  },
+  {
+    "id": "Q05",
+    "difficulty": "easy",
+    "question": "Berapa batas maksimum waktu kerja lembur dalam sehari?",
+    "expected_sources": [
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "pp-35-2021",
+      "uu-13-2003"
+    ],
+    "source_match": true,
+    "answer": "Batas maksimum waktu kerja lembur dalam sehari memiliki ketentuan yang berbeda berdasarkan dokumen regulasi yang tersedia:\n\n1. **Paling lama 4 (empat) jam dalam 1 (satu) hari**, sebagaimana diatur dalam Peraturan Pemerintah Nomor 35 Tahun 2021 [S1] dan Undang-Undang Nomor 6 Tahun 2023 [S3].\n2. **Paling banyak 3 (tiga) jam dalam 1 (satu) hari**, sebagaimana diatur dalam Undang-Undang Nomor 13 Tahun 2003 [S4].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 25",
+        "bab": "BAB IV"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "6",
+        "document_year": "2023",
+        "title": "Undang-undang Nomor 6 Tahun 2023 Tentang Penetapan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2022 Tentang Cipta Kerja Menjadi Undang-undang",
+        "pasal": "Pasal 78",
+        "bab": "BAB IV"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 78",
+        "bab": "BAB X"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-35-2021-0050",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 25",
+        "score": 0.8816,
+        "text_preview": "usaha atau pekerjaan tertentu yang menerapkan\nwaktu kerja lebih dari ketentuan sebagaimana\ndimaksud dalam Pasal 21 ayat (2), diatur dalam\nPerjanjian Kerja, Peraturan Perusahaan, atau\nPerjanjian Kerja "
+      },
+      {
+        "chunk_id": "pp-35-2021-0008",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8797,
+        "text_preview": "dibayarkan menurut suatu Perjanjian Kerja,\nkesepakatan, atau peraturan perundang -\nundangan, termasuk tunjangan bagi\nPekerja/Buruh dan keluarganya atas suatu\npekerjaan dan/atau jasa yang telah atau ak"
+      },
+      {
+        "chunk_id": "uu-6-2023-1919",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 78",
+        "score": 0.8778,
+        "text_preview": "Pasal 78\n(1) Pengusaha yang mempekerjakan Pekerja/Buruh\nmelebihi waktu kerja sebagaimana dimaksud\ndalam Pasal 77 ayat (2) harus memenuhi syarat:\na- ada persetujuan Pekerja/Buruh yang\nbersangkutan; dan"
+      },
+      {
+        "chunk_id": "uu-13-2003-0108",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 78",
+        "score": 0.8731,
+        "text_preview": "harus memenuhi syarat:\na. ada persetujuan pekerja/buruh yang bersangkutan; dan\nb. waktu kerja lembur hanya dapat dilakukan paling banyak 3 (tiga) jam dalam 1 (satu) hari dan 14 (empat belas) jam\ndalam"
+      },
+      {
+        "chunk_id": "pp-35-2021-0009",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8726,
+        "text_preview": "dalam 1 (satu) minggu atau 8 (delapan) jam sehari\ndan 40 (empat puluh) jam 1 (satu) minggu untuk 5\n(lima) hari kerja dalam 1 (satu) minggu atau waktu\nkerja pada hari istirahat mingguan dan/atau pada\nh"
+      }
+    ],
+    "elapsed_seconds": 7.25,
+    "is_rejected": false
+  },
+  {
+    "id": "Q06",
+    "difficulty": "medium",
+    "question": "Apakah PKWT dapat diperpanjang dan berapa lama keseluruhan masa kerjanya?",
+    "expected_sources": [
+      "pp-35-2021",
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "pp-35-2021"
+    ],
+    "source_match": true,
+    "answer": "Ya, PKWT dapat diperpanjang apabila jangka waktu PKWT akan berakhir dan pekerjaan yang dilaksanakan belum selesai [S2]. \n\nKetentuan perpanjangan dan durasi keseluruhan masa kerjanya adalah sebagai berikut:\n1. **PKWT berdasarkan jangka waktu:** Perpanjangan dilakukan sesuai kesepakatan antara Pengusaha dengan Pekerja/Buruh, dengan ketentuan jangka waktu keseluruhan PKWT beserta perpanjangannya tidak lebih dari 5 (lima) tahun [S1].\n2. **PKWT berdasarkan selesainya suatu pekerjaan tertentu:** Perpanjangan dilakukan sampai batas waktu tertentu hingga selesainya pekerjaan tersebut [S4].\n\nMasa kerja Pekerja/Buruh dalam hal perpanjangan jangka waktu PKWT tetap dihitung sejak terjadinya Hubungan Kerja berdasarkan PKWT [S1], [S4].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 8",
+        "bab": "BAB II"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 7",
+        "bab": "BAB II"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 9",
+        "bab": "BAB II"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-35-2021-0022",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 8",
+        "score": 0.89,
+        "text_preview": "dapat dilakukan perpanjangan PKWT dengan\njangka waktu sesuai kesepakatan antara\nPengusaha dengan Pekerja/Buruh, dengan\nketentuan jangka waktu keseluruhan PKWT\nbeserta perpanjangannya tidak lebih dari "
+      },
+      {
+        "chunk_id": "pp-35-2021-0021",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 7",
+        "score": 0.8796,
+        "text_preview": "kondisi tertentu sebagaimana dimaksud pada ayat\n(1) huruf b merupakan pekerjaan tambahan yang\ndilakukan untuk memenuhi pesanan atau target\ntertentu.\nPasal 8\n(1) PKWT berdasarkan jangka waktu sebagaima"
+      },
+      {
+        "chunk_id": "pp-35-2021-0034",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 15",
+        "score": 0.875,
+        "text_preview": "perpanjangan PKWT, uang kompensasi berikutnya\ndiberikan setelah perpanjangan jangka waktu\nPKWT berakhir atau selesai.\n(5) Pemberian uang kompensasi tidak berlaku bagi\ntenaga kerja asing yang dipekerja"
+      },
+      {
+        "chunk_id": "pp-35-2021-0025",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 9",
+        "score": 0.8739,
+        "text_preview": "dimaksud pada ayat (2) huruf b maka jangka\nwaktu PKWT dilakukan perpanjangan sampai\nbatas waktu tertentu hingga selesainya pekerjaan.\n(5) Masa kerja Pekerja/Buruh dalam hal perpanjangan\njangka waktu P"
+      },
+      {
+        "chunk_id": "pp-35-2021-0019",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 5",
+        "score": 0.871,
+        "text_preview": "pada ayat (1) dan ayat (2), PKWT dapat\ndilaksanakan terhadap pekerjaan tertentu lainnya\nyang jenis dan sifat atau kegiatannya bersifat tidak\ntetap.\nPasal 6\nPekerjaan yang diperkirakan penyelesaiannya "
+      }
+    ],
+    "elapsed_seconds": 7.73,
+    "is_rejected": false
+  },
+  {
+    "id": "Q07",
+    "difficulty": "medium",
+    "question": "Apa saja hak pekerja/buruh yang harus diterima ketika terjadi PHK?",
+    "expected_sources": [
+      "uu-13-2003",
+      "pp-35-2021"
+    ],
+    "found_doc_ids": [
+      "uu-13-2003"
+    ],
+    "source_match": true,
+    "answer": "Dalam hal terjadi Pemutusan Hubungan Kerja (PHK), pengusaha diwajibkan membayar hak-hak pekerja/buruh yang meliputi [S3]:\n1. **Uang pesangon** [S3]\n2. **Uang penghargaan masa kerja** [S3]\n3. **Uang penggantian hak** yang seharusnya diterima [S3]\n\nBesaran hak yang diterima pekerja/buruh dapat berbeda tergantung kondisi/alasan PHK:\n* **Pekerja/buruh tidak bersedia melanjutkan hubungan kerja** karena perubahan status, penggabungan, peleburan, atau perubahan kepemilikan perusahaan, berhak atas [S5]:\n  * Uang pesangon sebesar 1 (satu) kali ketentuan Pasal 156 ayat (2) [S5].\n  * Uang penghargaan masa kerja 1 (satu) kali ketentuan Pasal 156 ayat (3) [S5].\n  * Uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S5].\n* **Pengusaha tidak bersedia menerima pekerja/buruh** di perusahaannya karena perubahan status, penggabungan, atau peleburan perusahaan, pekerja/buruh berhak atas [S1]:\n  * Uang pesangon sebesar 2 (dua) kali ketentuan Pasal 156 ayat (2) [S1].\n  * Uang penghargaan masa kerja 1 (satu) kali ketentuan Pasal 156 ayat (3) [S1].\n  * Uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S1].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 163",
+        "bab": "BAB XII"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 61",
+        "bab": "BAB IX"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 155",
+        "bab": "BAB XII"
+      },
+      {
+        "label": "[S5]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 163",
+        "bab": "BAB XII"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-13-2003-0241",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 163",
+        "score": 0.8792,
+        "text_preview": "bungan, atau peleburan perusahaan, dan pengusaha tidak bersedia menerima pekerja/buruh di perusahaannya, maka\npekerja/buruh berhak atas uang pesangon sebesar 2 (dua) kali ketentuan Pasal 156 ayat (2),"
+      },
+      {
+        "chunk_id": "uu-13-2003-0084",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 61",
+        "score": 0.8774,
+        "text_preview": "setelah merundingkan dengan pekerja/buruh.\n(5) Dalam hal pekerja/buruh meninggal dunia, ahli waris pekerja/ buruh berhak mendapatkan hakhaknya sesuai dengan\nperaturan perundang-undangan yang berlaku a"
+      },
+      {
+        "chunk_id": "uu-13-2003-0215",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 155",
+        "score": 0.8731,
+        "text_preview": "membayar upah beserta hak-hak lainnya yang biasa diterima pekerja/buruh.\nPasal 156\n(1) Dalam hal terjadi pemutusan hubungan kerja, pengusaha diwajibkan membayar uang pesangon dan atau uang\npenghargaan"
+      },
+      {
+        "chunk_id": "uu-13-2003-0117",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 85",
+        "score": 0.8721,
+        "text_preview": "Paragraf 5\nKeselamatan dan Kesehatan Kerja\nPasal 86\n(1) Setiap pekerja/buruh mempunyai hak untuk memperoleh perlindungan atas:\na. keselamatan dan kesehatan kerja;\nb. moral dan kesusilaan; dan\nc. perla"
+      },
+      {
+        "chunk_id": "uu-13-2003-0240",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 163",
+        "score": 0.8711,
+        "text_preview": "penggabungan, peleburan, atau perubahan kepemilikan perusahaan dan pekerja/buruh tidak bersedia melanjutkan\nhubungan kerja, maka pekerja/buruh berhak atas uang pesangon sebesar 1 (satu) kali sesuai ke"
+      }
+    ],
+    "elapsed_seconds": 8.32,
+    "is_rejected": false
+  },
+  {
+    "id": "Q08",
+    "difficulty": "medium",
+    "question": "Bagaimana cara menghitung besaran uang pesangon?",
+    "expected_sources": [
+      "pp-35-2021",
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "pp-35-2021",
+      "uu-13-2003",
+      "pp-36-2021"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang tersedia, cara menghitung besaran uang pesangon dilakukan dengan memperhatikan komponen upah dasar dan ketentuan jumlah bulan upah/koefisien sesuai masa kerja dan alasan PHK:\n\n1. **Komponen Upah Dasar Perhitungan:**\n   * Komponen upah yang digunakan terdiri dari **Upah pokok** dan **tunjangan tetap** [S1].\n   * Jika upah dibayarkan secara **harian**, upah sebulan dihitung **30 dikalikan upah sehari** [S4].\n   * Jika upah dibayarkan berdasarkan **satuan hasil**, upah sebulan dihitung dari **rata-rata penghasilan dalam 12 bulan terakhir** [S4].\n   * Jika upah sebulan lebih rendah dari **Upah minimum**, maka dasar perhitungan yang digunakan adalah **Upah minimum** yang berlaku [S4].\n\n2. **Ketentuan Besaran Pesangon:**\n   * Untuk masa kerja **kurang dari 1 (satu) tahun**, besaran uang pesangon paling sedikit adalah **1 (satu) bulan upah** [S5].\n   * Besaran perkalian/koefisien pesangon dapat menyesuaikan kondisi/alasan PHK tertentu, seperti sebesar **0,5 (nol koma lima) kali** ketentuan untuk alasan pengambilalihan perusahaan atau efisiensi karena perusahaan mengalami kerugian [S2].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "36",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 36 Tahun 2021 Tentang Pengupahan",
+        "pasal": "Pasal 65",
+        "bab": "BAB IX"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 40 ayat (2);",
+        "bab": "BAB V"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "6",
+        "document_year": "2023",
+        "title": "Undang-undang Nomor 6 Tahun 2023 Tentang Penetapan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2022 Tentang Cipta Kerja Menjadi Undang-undang",
+        "pasal": "Pasal 157",
+        "bab": "BAB IV"
+      },
+      {
+        "label": "[S5]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 155",
+        "bab": "BAB XII"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-36-2021-0097",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 65",
+        "score": 0.8484,
+        "text_preview": "Pekerja/Buruh.\nBAB X\nUPAH SEBAGAI DASAR PERHITUNGAN ATAU\nPEMBAYARAN HAK DAN KEWAJIBAN LAINNYA\nBagian Kesatu\nUpah Sebagai Dasar Perhitungan Uang Pesangon dan Uang\nPenghargaan Masa Kerja\nPasal 66\n(1) Ko"
+      },
+      {
+        "chunk_id": "pp-35-2021-0090",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 40 ayat (2);",
+        "score": 0.8475,
+        "text_preview": "a. uang pesangon sebesar 0,5 (nol koma lima)\nkali ketentuan Pasal 40 ayat (2);\nb. uang penghargaan masa kerja sebesar 1 (satu)\nkali ketentuan Pasal 40 ayat (3); dan\nc. uang penggantian hak sesuai kete"
+      },
+      {
+        "chunk_id": "uu-13-2003-0221",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 156",
+        "score": 0.8421,
+        "text_preview": "pesangon dan/atau uang penghargaan masa kerja bagi yang memenuhi syarat;\nd. hal-hal lain yang ditetapkan dalam perjanjian kerja, peraturan perusahaan atau perjanjian kerja bersama.\n(4) Perubahan perhi"
+      },
+      {
+        "chunk_id": "uu-6-2023-1970",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 157",
+        "score": 0.8421,
+        "text_preview": "(21 Dalam hal penghasilan Pekerja/Buruh dibayarkan\natas dasar perhitungan harian, Upah sebulan sama\ndengan 30 (tiga puluh) dikalikan Upah sehari.\n(3) Dalam hal Upah Pekerja/Buruh dibayarkan atas\ndasar"
+      },
+      {
+        "chunk_id": "uu-13-2003-0215",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 155",
+        "score": 0.8394,
+        "text_preview": "membayar upah beserta hak-hak lainnya yang biasa diterima pekerja/buruh.\nPasal 156\n(1) Dalam hal terjadi pemutusan hubungan kerja, pengusaha diwajibkan membayar uang pesangon dan atau uang\npenghargaan"
+      }
+    ],
+    "elapsed_seconds": 8.84,
+    "is_rejected": false
+  },
+  {
+    "id": "Q09",
+    "difficulty": "medium",
+    "question": "Apa saja syarat sah perjanjian kerja?",
+    "expected_sources": [
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "uu-13-2003",
+      "pp-36-2021"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang tersedia, perjanjian kerja dibuat atas dasar atau syarat sebagai berikut:\n\n1. Kesepakatan kedua belah pihak;\n2. Kemampuan atau kecakapan melakukan perbuatan hukum;\n3. Adanya pekerjaan yang diperjanjikan; dan\n4. Pekerjaan yang diperjanjikan tidak bertentangan dengan ketertiban umum, kesusilaan, dan peraturan perundang-undangan yang berlaku.\n\nSumber: [S3]",
+    "sources": [
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 51",
+        "bab": "BAB IX"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-36-2021-0006",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8698,
+        "text_preview": "bentuk lain.\n5. Perjanjian Kerja adalah perjanjian antara\nPekerja/Buruh dengan Pengusaha atau pemberi kerja\nyang memuat syarat -syarat kerja, ha k, dan kewajiban\npara pihak.\n6. Peraturan Perusahaan ad"
+      },
+      {
+        "chunk_id": "uu-13-2003-0073",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 54",
+        "score": 0.8649,
+        "text_preview": "i. tanda tangan para pihak dalam perjanjian kerja.\n(2) Ketentuan dalam perjanjian kerja sebagaimana dimaksud dalam ayat (1) huruf e dan f, tidak boleh bertentangan dengan\nperaturan perusahaan, perjanj"
+      },
+      {
+        "chunk_id": "uu-13-2003-0070",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 51",
+        "score": 0.8602,
+        "text_preview": "berlaku.\nPasal 52\n(1) Perjanjian kerja dibuat atas dasar:\na. kesepakatan kedua belah pihak;\nb. kemampuan atau kecakapan melakukan perbuatan hukum;\nc. adanya pekerjaan yang diperjanjikan; dan\nd. pekerj"
+      },
+      {
+        "chunk_id": "uu-13-2003-0171",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 124",
+        "score": 0.8576,
+        "text_preview": "ketentuan dalam peraturan perundang-undangan.\nPasal 125\nDalam hal kedua belah pihak sepakat mengadakan perubahan perjanjian kerja bersama, maka perubahan tersebut\nmerupakan bagian yang tidak terpisahk"
+      },
+      {
+        "chunk_id": "uu-13-2003-0090",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 65",
+        "score": 0.8574,
+        "text_preview": "secara tertulis antara perusahaan lain dan pekerja/buruh yang dipekerjakannya.\n(7) Hubungan kerja sebagaimana dimaksud dalam ayat (6) dapat didasarkan atas perjanjian kerja waktu tidak tertentu atau\np"
+      }
+    ],
+    "elapsed_seconds": 6.58,
+    "is_rejected": false
+  },
+  {
+    "id": "Q10",
+    "difficulty": "medium",
+    "question": "Bagaimana tata cara penggunaan tenaga kerja asing (TKA)?",
+    "expected_sources": [
+      "permenaker-10-2018",
+      "uu-13-2003"
+    ],
+    "found_doc_ids": [
+      "permenaker-10-2018"
+    ],
+    "source_match": true,
+    "answer": "Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "permenaker-10-2018-0010",
+        "document_id": "permenaker-10-2018",
+        "pasal": "Pasal 1",
+        "score": 0.8885,
+        "text_preview": "1. Tenaga Kerja Asing yang selanjutnya disingkat TKA\nadalah warga negara asing pemegang visa dengan\nmaksud bekerja di wilayah Indonesia.\n2. Tenaga Kerja Pendamping adalah tenaga kerja Indonesia\nyang d"
+      },
+      {
+        "chunk_id": "permenaker-10-2018-0009",
+        "document_id": "permenaker-10-2018",
+        "pasal": "",
+        "score": 0.881,
+        "text_preview": "Pemerintah, dan Rancangan Peraturan Presiden serta\nPembentukan Rancangan Peratura n Menteri di\nKementerian Ketenagakerjaan (Berita Negara Republik\nIndonesia Tahun 2015 Nomor 411);\nMEMUTUSKAN:\nMenetapk"
+      },
+      {
+        "chunk_id": "permenaker-10-2018-0019",
+        "document_id": "permenaker-10-2018",
+        "pasal": "Pasal 2",
+        "score": 0.8782,
+        "text_preview": "Pasal 2\nPeraturan Menteri ini digunakan sebagai pedoman bagi\npemangku kepentingan untuk pengendalian penggunaan TKA.\nBAB II\nPEMBERI KERJA TENAGA KERJA ASING\nDAN TENAGA KERJA ASING\nBagian Kesatu\nPember"
+      },
+      {
+        "chunk_id": "permenaker-10-2018-0011",
+        "document_id": "permenaker-10-2018",
+        "pasal": "Pasal 1",
+        "score": 0.8776,
+        "text_preview": "badan-badan lainnya yang mempekerjakan TKA dengan\nmembayar upah atau imbalan dalam bentuk lain.\n4. Rencana Penggunaan Tenaga Kerja Asing yang\nselanjutnya disingkat RPTKA adalah rencana penggunaan\nTKA "
+      },
+      {
+        "chunk_id": "permenaker-10-2018-0000",
+        "document_id": "permenaker-10-2018",
+        "pasal": "",
+        "score": 0.8745,
+        "text_preview": "BERITA NEGARA\nREPUBLIK INDONESIA\nNo.882, 2018 KEMENAKER. Tata Cara Penggunaan TKA.\nPencabutan.\nPERATURAN MENTERI KETENAGAKERJAAN\nREPUBLIK INDONESIA\nNOMOR 10 TAHUN 2018\nTENTANG\nTATA CARA PENGGUNAAN TEN"
+      }
+    ],
+    "elapsed_seconds": 6.47,
+    "is_rejected": true
+  },
+  {
+    "id": "Q11",
+    "difficulty": "medium",
+    "question": "Apa saja manfaat program Jaminan Kehilangan Pekerjaan (JKP)?",
+    "expected_sources": [
+      "pp-37-2021"
+    ],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "pp-37-2021"
+    ],
+    "source_match": true,
+    "answer": "Manfaat program Jaminan Kehilangan Pekerjaan (JKP) meliputi:\n1. **Uang tunai** [S1, S3, S4], yang diberikan paling banyak 6 (enam) bulan upah [S4].\n2. **Akses informasi pasar kerja** [S1, S3, S4].\n3. **Pelatihan kerja** [S1, S3, S4].\n\nSumber: [S1], [S3], [S4]",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "37",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 37 Tahun 2021 Tentang Penyelenggaraan Program Jaminan Kehilangan Pekerjaan",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "37",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 37 Tahun 2021 Tentang Penyelenggaraan Program Jaminan Kehilangan Pekerjaan",
+        "pasal": "",
+        "bab": ""
+      },
+      {
+        "label": "[S3]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "37",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 37 Tahun 2021 Tentang Penyelenggaraan Program Jaminan Kehilangan Pekerjaan",
+        "pasal": "Pasal 18",
+        "bab": "BAB IV"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "6",
+        "document_year": "2023",
+        "title": "Undang-undang Nomor 6 Tahun 2023 Tentang Penetapan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2022 Tentang Cipta Kerja Menjadi Undang-undang",
+        "pasal": "Pasal 46D",
+        "bab": "BAB IV"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-37-2021-0004",
+        "document_id": "pp-37-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8925,
+        "text_preview": "1. Jaminan Kehilangan Pekerjaan yang selanjutnya\ndisingkat JKP adalah jaminan sosial yang diberikan\nkepada Pekerja/Buruh yang mengalami Pemutusan\nHubungan Kerja berupa manfaat uang tunai , akses\ninfor"
+      },
+      {
+        "chunk_id": "pp-37-2021-0003",
+        "document_id": "pp-37-2021",
+        "pasal": "",
+        "score": 0.8911,
+        "text_preview": "Nomor 5256);\n5. Undang-Undang Nomor 11 Tahun 2020 tentang Cipta\nKerja (Lembaran Negara Republik Indonesia Tahun\n2020 Nomor 245, Tambahan Lembaran Negara\nRepublik Indonesia Nomor 6573);\nMEMUTUSKAN:\nMen"
+      },
+      {
+        "chunk_id": "pp-37-2021-0037",
+        "document_id": "pp-37-2021",
+        "pasal": "Pasal 18",
+        "score": 0.8858,
+        "text_preview": "Manfaat JKP berupa:\na. uang tunai;\nb. akses informasi pasar kerja; dan\nc. Pelatihan Kerja.\nPasal 19\n(1) Manfaat JKP diberikan kepada Peserta yang\nmengalami Pemutusan Hubungan Kerja baik untuk\nhubungan"
+      },
+      {
+        "chunk_id": "uu-6-2023-1991",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 46D",
+        "score": 0.8662,
+        "text_preview": "uang tunai, akses informasi pasar kerja, dan\npelatihan kerja.\nSK No l71581A\n(2) Jaminan...\nPRESIDEN\nREPUBIJK INDONESIA\n-571-\n(21 Jaminan kehilangan pekerjaan sebagaimana\ndimaksud pada ayat (1) diberik"
+      },
+      {
+        "chunk_id": "pp-37-2021-0008",
+        "document_id": "pp-37-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8636,
+        "text_preview": "Peserta memperoleh manfaat pemeliharaan kesehatan\ndan perlindungan dalam memenuhi kebutuhan dasar\nkesehatan yang diberikan kepa da setiap orang yang\ntelah membayar iuran jaminan kesehatan atau iuran\nj"
+      }
+    ],
+    "elapsed_seconds": 6.07,
+    "is_rejected": false
+  },
+  {
+    "id": "Q12",
+    "difficulty": "medium",
+    "question": "Bagaimana penyelesaian perselisihan hubungan industrial melalui mediasi?",
+    "expected_sources": [
+      "uu-2-2004"
+    ],
+    "found_doc_ids": [
+      "uu-2-2004"
+    ],
+    "source_match": true,
+    "answer": "Penyelesaian perselisihan hubungan industrial melalui mediasi dilaksanakan berdasarkan ketentuan berikut:\n\n1. **Pengertian dan Jenis Perselisihan:** Mediasi merupakan penyelesaian perselisihan hak, perselisihan kepentingan, perselisihan pemutusan hubungan kerja (PHK), dan perselisihan antar serikat pekerja/serikat buruh hanya dalam satu perusahaan melalui musyawarah yang ditengahi oleh satu atau lebih mediator netral [S1].\n2. **Pelaksana Mediasi:** Penyelesaian dilakukan oleh mediator yang bertugas mempertemukan kepentingan kedua belah pihak yang berselisih. Mediator ini berada di setiap kantor instansi yang bertanggung jawab di bidang ketenagakerjaan Kabupaten/Kota [S2, S4].\n3. **Persyaratan Sebelum Pengadilan:** Apabila kedua belah pihak tidak menyepakati penyelesaian melalui konsiliasi atau arbitrase, maka perselisihan wajib terlebih dahulu diselesaikan melalui mediasi sebelum diajukan ke Pengadilan Hubungan Industrial [S3].\n4. **Jangka Waktu Penyelesaian:** Mediator menyelesaikan tugasnya dalam waktu selambat-lambatnya 30 (tiga puluh) hari kerja terhitung sejak menerima perselisihan [S5].\n5. **Tindak Lanjut Jika Ditolak:** Apabila anjuran tertulis dari mediasi ditolak oleh salah satu atau kedua belah pihak, para pihak atau salah satu pihak dapat melanjutkan penyelesaian ke Pengadilan Hubungan Industrial pada Pengadilan Negeri setempat dengan mengajukan gugatan [S5].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "2",
+        "document_year": "2004",
+        "title": "Undang-undang Nomor 2 Tahun 2004 Tentang Penyelesaian Perselisihan Hubungan Industrial",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "2",
+        "document_year": "2004",
+        "title": "Undang-undang Nomor 2 Tahun 2004 Tentang Penyelesaian Perselisihan Hubungan Industrial",
+        "pasal": "Pasal 126",
+        "bab": "BAB VIII"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "2",
+        "document_year": "2004",
+        "title": "Undang-undang Nomor 2 Tahun 2004 Tentang Penyelesaian Perselisihan Hubungan Industrial",
+        "pasal": "Pasal 126",
+        "bab": "BAB VIII"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "2",
+        "document_year": "2004",
+        "title": "Undang-undang Nomor 2 Tahun 2004 Tentang Penyelesaian Perselisihan Hubungan Industrial",
+        "pasal": "Pasal 7",
+        "bab": "BAB II"
+      },
+      {
+        "label": "[S5]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "2",
+        "document_year": "2004",
+        "title": "Undang-undang Nomor 2 Tahun 2004 Tentang Penyelesaian Perselisihan Hubungan Industrial",
+        "pasal": "Pasal 14",
+        "bab": "BAB II"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-2-2004-0013",
+        "document_id": "uu-2-2004",
+        "pasal": "Pasal 1",
+        "score": 0.9001,
+        "text_preview": "menyelesaikan perselisihan hubungan industrial.\n11. Mediasi Hubungan Industrial yang selanjutnya disebut mediasi adalah penyelesaian perselisihan hak, perselisihan\nkepentingan, perselisihan pemutusan "
+      },
+      {
+        "chunk_id": "uu-2-2004-0182",
+        "document_id": "uu-2-2004",
+        "pasal": "Pasal 126",
+        "score": 0.8891,
+        "text_preview": "pekerja/buruh dan pengusaha, berkewajiban memfasilitasi penyelesaian perselisihan hubungan industrial tersebut. Upaya\nfasilitasi dilakukan dengan menyediakan tenaga mediator yang bertugas untuk memper"
+      },
+      {
+        "chunk_id": "uu-2-2004-0189",
+        "document_id": "uu-2-2004",
+        "pasal": "Pasal 126",
+        "score": 0.8777,
+        "text_preview": "belah pihak hanya perselisihan kepentingan dan perselisihan antar serikat pekerja/serikat buruh. Apabila tidak ada\nkesepakatan kedua belah pihak untuk menyelesaikan perselisihannya melalui konsiliasi "
+      },
+      {
+        "chunk_id": "uu-2-2004-0031",
+        "document_id": "uu-2-2004",
+        "pasal": "Pasal 7",
+        "score": 0.8756,
+        "text_preview": "Hubungan Industrial pada Pengadilan Negeri yang berkompeten melaksanakan eksekusi.\nBagian Kedua\nPenyelesaian Melalui Mediasi\nPasal 8\nPenyelesaian perselisihan melalui mediasi dilakukan oleh mediator y"
+      },
+      {
+        "chunk_id": "uu-2-2004-0042",
+        "document_id": "uu-2-2004",
+        "pasal": "Pasal 14",
+        "score": 0.8737,
+        "text_preview": "pihak, maka para pihak atau salah satu pihak dapat melanjutkan penyelesaian perselisihan ke Pengadilan Hubungan\nIndustrial pada Pengadilan Negeri setempat.\n(2) Penyelesaian perselisihan sebagaimana di"
+      }
+    ],
+    "elapsed_seconds": 9.33,
+    "is_rejected": false
+  },
+  {
+    "id": "Q13",
+    "difficulty": "medium",
+    "question": "Apa yang dimaksud dengan struktur dan skala upah?",
+    "expected_sources": [
+      "permenaker-1-2017",
+      "pp-36-2021"
+    ],
+    "found_doc_ids": [
+      "permenaker-1-2017",
+      "pp-36-2021"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang tersedia:\n\n* **Struktur Upah** adalah susunan tingkat upah dari yang terendah sampai dengan yang tertinggi atau dari yang tertinggi sampai dengan yang terendah [S1].\n* **Skala Upah** adalah kisaran nilai nominal upah dari yang terkecil sampai dengan yang terbesar untuk setiap golongan jabatan [S1].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN MENTERI",
+        "document_number": "1",
+        "document_year": "2017",
+        "title": "Peraturan Menteri Ketenagakerjaan Nomor 1 Tahun 2017 Tentang Struktur dan Skala Upah",
+        "pasal": "",
+        "bab": ""
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "permenaker-1-2017-0004",
+        "document_id": "permenaker-1-2017",
+        "pasal": "",
+        "score": 0.8924,
+        "text_preview": "Indonesia Tahun 2015 Nomor 411);\nMEMUTUSKAN:\nMenetapkan : PERATURAN MENTERI KETENAGAKERJAAN TENTANG\nSTRUKTUR DAN SKALA UPAH.\nBAB I\nKETENTUAN UMUM\nPasal 1\nDalam Peraturan Menteri ini yang dimaksud deng"
+      },
+      {
+        "chunk_id": "pp-36-2021-0030",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 21",
+        "score": 0.8865,
+        "text_preview": "sekurang-kurangnya struktur dan skala Upah pada\ngolongan jabatan sesuai dengan jabatan\nPekerja/Buruh yang bersangkutan.\nPasal 22\n(1) Struktur dan skala Upah sebagaimana dimaksud\ndalam Pasal 21 ayat (1"
+      },
+      {
+        "chunk_id": "pp-36-2021-0029",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 20",
+        "score": 0.8857,
+        "text_preview": "menjadi pedoman dalam penetapan besaran Upah\npokok.\nPasal 21\n(1) Pengusaha wajib menyusun dan menerapkan struktur\ndan skala Upah di Perusahaan dengan memperhatikan\nkemampuan Perusahaan dan produktivit"
+      },
+      {
+        "chunk_id": "permenaker-1-2017-0011",
+        "document_id": "permenaker-1-2017",
+        "pasal": "Pasal 3",
+        "score": 0.8849,
+        "text_preview": "Pasal 3\n(1) Upah yang terc antum dalam Struktur dan Skala Upah\nmerupakan upah pokok.\n(2) Upah pokok sebagaimana dimaksud pada ayat (1)\nmerupakan imbalan dasar yang dibayarkan kepada\nPekerja/Buruh menu"
+      },
+      {
+        "chunk_id": "permenaker-1-2017-0014",
+        "document_id": "permenaker-1-2017",
+        "pasal": "Pasal 6",
+        "score": 0.8834,
+        "text_preview": "terpisahkan dari Peraturan Menteri ini atau menggunakan\nmetode lain.\nPasal 7\n(1) Struktur dan Skala Upah berlaku bagi setiap\nPekerja/Buruh yang mempunyai hubungan kerja dengan\nPengusaha di Perusahaan "
+      }
+    ],
+    "elapsed_seconds": 4.59,
+    "is_rejected": false
+  },
+  {
+    "id": "Q14",
+    "difficulty": "hard",
+    "question": "Bagaimana ketentuan PHK menurut regulasi yang tersedia, termasuk hak-hak yang timbul?",
+    "expected_sources": [
+      "uu-13-2003",
+      "uu-6-2023",
+      "pp-35-2021"
+    ],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "uu-40-2004",
+      "pp-37-2021",
+      "uu-13-2003"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen regulasi yang tersedia, ketentuan mengenai Pemutusan Hubungan Kerja (PHK) dan hak-hak yang timbul diatur sebagai berikut:\n\n1. **Hak Pekerja/Buruh dalam Keadaan/Kejadian Tertentu:**\n   Dalam keadaan atau kejadian tertentu (seperti bencana alam, kerusuhan sosial, atau gangguan keamanan), hak-hak yang diberikan kepada Pekerja/Buruh sesuai peraturan perundang-undangan, Perjanjian Kerja, Peraturan Perusahaan, atau Perjanjian Kerja Bersama adalah hak-hak yang harus diberikan yang lebih baik dan menguntungkan Pekerja/Buruh yang bersangkutan [S1].\n\n2. **Hak Pekerja/Buruh Jika Pengusaha Tidak Mengikutsertakan dalam Program JKP:**\n   Apabila terjadi PHK dan pengusaha tidak mengikutsertakan Pekerja/Buruh dalam program JKP (Jaminan Kehilangan Pekerjaan), pengusaha wajib memenuhi hak Pekerja/Buruh berupa [S3]:\n   * Manfaat uang tunai yang diberikan secara sekaligus [S3].\n   * Manfaat pelatihan kerja [S3].\n\n---\nDISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "6",
+        "document_year": "2023",
+        "title": "Undang-undang Nomor 6 Tahun 2023 Tentang Penetapan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2022 Tentang Cipta Kerja Menjadi Undang-undang",
+        "pasal": "Pasal 61",
+        "bab": "BAB XV"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "13",
+        "document_year": "2003",
+        "title": "Undang-undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan",
+        "pasal": "Pasal 96",
+        "bab": "BAB X"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "37",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 37 Tahun 2021 Tentang Penyelenggaraan Program Jaminan Kehilangan Pekerjaan",
+        "pasal": "Pasal 36",
+        "bab": "BAB IV"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-6-2023-3089",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 61",
+        "score": 0.8532,
+        "text_preview": "Keadaan atau kejadian tertentu seperti bencana\nalam, kerusuhan sosial, atau gangguan keamanan.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (5)\nYang dimaksud dengan \"hak-hakn"
+      },
+      {
+        "chunk_id": "uu-13-2003-0135",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 96",
+        "score": 0.8498,
+        "text_preview": "setelah melampaui jangka waktu 2 (dua) tahun sejak timbulnya hak.\nPasal 97\nKetentuan mengenai penghasilan yang layak, kebijakan pengupahan, kebutuhan hidup layak, dan perlindungan\npengupahan sebagaima"
+      },
+      {
+        "chunk_id": "pp-37-2021-0056",
+        "document_id": "pp-37-2021",
+        "pasal": "Pasal 36",
+        "score": 0.8474,
+        "text_preview": "mengalami Pemutusan Hubungan Kerja.\nPasal 37\n(1) Dalam hal Pengusaha tidak mengikutsertakan\nPekerja/Buruh dalam program JKP dan terjadi\nPemutusan Hubungan Kerja, Pengusaha wajib\nmemenuhi hak Pekerja/B"
+      },
+      {
+        "chunk_id": "uu-6-2023-2424",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 48",
+        "score": 0.844,
+        "text_preview": "dari permukiman penduduk dapat diterapkan\nketentuan lalu lintas barang dan/atau diberikan\nfasilitas dan kemudahan KEK.\n(6) Ketentuan mengenai pengusulan dan penetapan\nKEK sebagaimana dimaksud pada aya"
+      },
+      {
+        "chunk_id": "uu-40-2004-0112",
+        "document_id": "uu-40-2004",
+        "pasal": "Pasal 23",
+        "score": 0.8439,
+        "text_preview": "dan fasilitas kesehatan lainnya. Fasilitas ke sehatan memenuhi syarat tertentu apabila\nfasilitas kesehatan tersebut diakui dan mem iliki izin dari instan si Pemerintah yang\nbertanggung jawab di bidang"
+      }
+    ],
+    "elapsed_seconds": 11.47,
+    "is_rejected": false
+  },
+  {
+    "id": "Q15",
+    "difficulty": "hard",
+    "question": "Apa perbedaan antara PKWT dan PKWTT?",
+    "expected_sources": [
+      "uu-13-2003",
+      "pp-35-2021"
+    ],
+    "found_doc_ids": [
+      "pp-35-2021"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang tersedia, perbedaan antara PKWT dan PKWTT adalah sebagai berikut:\n\n1. **PKWT (Perjanjian Kerja Waktu Tertentu):** \n   - Merupakan perjanjian kerja antara Pekerja/Buruh dengan Pengusaha untuk mengadakan hubungan kerja dalam **waktu tertentu** atau untuk **pekerjaan tertentu** [S1].\n   - Didasarkan atas jangka waktu atau selesainya suatu pekerjaan tertentu [S2].\n   - Tidak dapat diadakan untuk pekerjaan yang bersifat tetap [S2].\n\n2. **PKWTT (Perjanjian Kerja Waktu Tidak Tertentu):** \n   - Merupakan perjanjian kerja yang dibuat untuk **waktu tidak tertentu** [S1], [S2].",
+    "sources": [
+      {
+        "label": "[S1]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S2]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "35",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 35 Tahun 2021 Tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja",
+        "pasal": "Pasal 2",
+        "bab": "BAB II"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-35-2021-0010",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8547,
+        "text_preview": "Lembur.\n9. Perjanjian Kerja adalah perjanjian antara\nPekerja/Buruh dengan Pengusaha atau pemberi\nkerja yang memuat syarat -syarat kerja, hak, dan\nkewajiban para pihak.\n10. Perjanjian Kerja Waktu Te rt"
+      },
+      {
+        "chunk_id": "pp-35-2021-0016",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 2",
+        "score": 0.8483,
+        "text_preview": "dilaksanakan sesuai dengan ketentuan peraturan\nperundang-undangan.\n(4) Perjanjian Kerja dibuat untuk waktu tertentu atau\nuntuk waktu tidak tertentu.\nPasal 3\nPKWTT dilaksanakan sesuai dengan ketentuan\n"
+      },
+      {
+        "chunk_id": "pp-35-2021-0017",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 4",
+        "score": 0.8423,
+        "text_preview": "(2) PKWT tidak dapat diadakan untuk pekerjaan yang\nbersifat tetap.\nPasal 5\n(1) PKWT berdasarkan jangka waktu sebagaimana\ndimaksud dalam Pasal 4 ayat (1) huruf a dibuat\nuntuk pekerjaan tertentu yaitu:\n"
+      },
+      {
+        "chunk_id": "pp-35-2021-0018",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 5",
+        "score": 0.8402,
+        "text_preview": "baru, kegiatan baru, atau produk tambahan\nyang masih dalam percobaan atau penjajakan.\n(2) PKWT berdasarkan selesainya suatu pekerjaan\ntertentu sebagaimana dimaksud dalam Pasal 4\nayat (1) huruf b dibua"
+      },
+      {
+        "chunk_id": "pp-35-2021-0023",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 9",
+        "score": 0.8369,
+        "text_preview": "Pasal 9\n(1) PKWT berdasarkan selesainya suatu pekerjaan\ntertentu sebagaimana dimaksud dalam Pasal 5\nayat (2) didasarkan atas kesepakatan para pihak\nyang dituangkan dalam Perjanjian Kerja.\n(2) Kesepaka"
+      }
+    ],
+    "elapsed_seconds": 9.86,
+    "is_rejected": false
+  },
+  {
+    "id": "Q16",
+    "difficulty": "hard",
+    "question": "Bagaimana hubungan antara UU Cipta Kerja dan UU 13/2003 terkait pengupahan dan pesangon?",
+    "expected_sources": [
+      "uu-6-2023",
+      "uu-13-2003",
+      "pp-35-2021"
+    ],
+    "found_doc_ids": [
+      "permenaker-1-2017",
+      "uu-6-2023",
+      "pp-36-2021"
+    ],
+    "source_match": true,
+    "answer": "Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-36-2021-0001",
+        "document_id": "pp-36-2021",
+        "pasal": "",
+        "score": 0.8559,
+        "text_preview": "tentang Cipta Kerja, perlu menetapkan Peraturan\nPemerintah tentang Pengupahan;\nMengingat : 1. Pasal 5 ayat (2) Undang -Undang Dasar Negara\nRepublik Indonesia Tahun 1945;\n2. Undang-Undang Nomor 13 Tahu"
+      },
+      {
+        "chunk_id": "pp-36-2021-0012",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 3",
+        "score": 0.8541,
+        "text_preview": "Pasal 3\nHak Pekerja/Buruh atas Upah timbul pada saat terjadi\nHubungan Kerja antara Pekerja/Buruh dengan Pengusaha\ndan berakhir pada saat putusnya Hubungan Kerja.\nBAB II\nKEBIJAKAN PENGUPAHAN\nPasal 4\n(1"
+      },
+      {
+        "chunk_id": "permenaker-1-2017-0002",
+        "document_id": "permenaker-1-2017",
+        "pasal": "",
+        "score": 0.8479,
+        "text_preview": "2. Undang-Undang Nomor 13 Tahun 2003 tentang\nKetenagakerjaan (Lembaran Negara Republik Indonesia\nTahun 2003 Nomor 39, Tambahan Lembaran Negara\nRepublik Indonesia Nomor 4279);\n2. Peraturan Pemerintah N"
+      },
+      {
+        "chunk_id": "uu-6-2023-2593",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 186",
+        "score": 0.8478,
+        "text_preview": "Pengganti Undang-Undang tentang Cipta Kerja ini meliputi:\na. peningkatan ekosistem investasi dan kegiatan berusaha;\nb. ketenagakerjaan;\nc. kemudahan, pelindungan, serta pemberdayaan Koperasi dan UMK-M"
+      },
+      {
+        "chunk_id": "pp-36-2021-0134",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 84",
+        "score": 0.8447,
+        "text_preview": "peraturan pelaksanaan dari Undang-Undang Nomor 13\nTahun 2003 tentang Ketenagakerjaan yang mengatur\nmengenai pengupahan dinyatakan masih tetap berlaku\nsepanjang tidak bertentangan dengan Peraturan\nPeme"
+      }
+    ],
+    "elapsed_seconds": 6.4,
+    "is_rejected": true
+  },
+  {
+    "id": "Q17",
+    "difficulty": "hard",
+    "question": "Apa saja program jaminan sosial ketenagakerjaan dan badan yang menyelenggarakannya?",
+    "expected_sources": [
+      "uu-40-2004",
+      "uu-24-2011",
+      "pp-37-2021"
+    ],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "pp-37-2021",
+      "uu-40-2004"
+    ],
+    "source_match": true,
+    "answer": "Berdasarkan dokumen yang disediakan, berikut adalah program jaminan sosial dan badan penyelenggaranya yang tercantum dalam teks:\n\n**Program Jaminan Sosial:**\n1. **Jaminan Kehilangan Pekerjaan**: Hak bagi pekerja/buruh yang mengalami pemutusan hubungan kerja [S2].\n2. **Jaminan Kesehatan**: Program jaminan kesehatan [S4].\n3. **Jaminan Sosial Pekerja Migran Indonesia** [S5].\n\n**Badan Penyelenggara:**\n1. **BPJS Ketenagakerjaan (Badan Penyelenggara Jaminan Sosial Ketenagakerjaan)** dan **Pemerintah Pusat**: Menyelenggarakan program Jaminan Kehilangan Pekerjaan [S2], [S4].\n2. **BPJS Kesehatan (Badan Penyelenggara Jaminan Sosial Kesehatan)**: Menyelenggarakan program Jaminan Kesehatan [S4].\n3. **Badan Penyelenggara Jaminan Sosial**: Menyelenggarakan program Jaminan Sosial Pekerja Migran Indonesia [S5].",
+    "sources": [
+      {
+        "label": "[S2]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "6",
+        "document_year": "2023",
+        "title": "Undang-undang Nomor 6 Tahun 2023 Tentang Penetapan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2022 Tentang Cipta Kerja Menjadi Undang-undang",
+        "pasal": "Pasal 46A",
+        "bab": "BAB IV"
+      },
+      {
+        "label": "[S3]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "40",
+        "document_year": "2004",
+        "title": "Undang-undang Nomor 40 Tahun 2004 Tentang Sistem Jaminan Sosial Nasional",
+        "pasal": "Pasal 53",
+        "bab": "BAB IX"
+      },
+      {
+        "label": "[S4]",
+        "document_type": "PERATURAN PEMERINTAH",
+        "document_number": "37",
+        "document_year": "2021",
+        "title": "Peraturan Pemerintah Nomor 37 Tahun 2021 Tentang Penyelenggaraan Program Jaminan Kehilangan Pekerjaan",
+        "pasal": "Pasal 1",
+        "bab": "BAB I"
+      },
+      {
+        "label": "[S5]",
+        "document_type": "UNDANG-UNDANG",
+        "document_number": "6",
+        "document_year": "2023",
+        "title": "Undang-undang Nomor 6 Tahun 2023 Tentang Penetapan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2022 Tentang Cipta Kerja Menjadi Undang-undang",
+        "pasal": "Pasal 1",
+        "bab": "BAB IV"
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-6-2023-2569",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 186",
+        "score": 0.878,
+        "text_preview": "Pemerintah Pusat telah berupaya untuk perluasan program jaminan\ndan bantuan sosial yang merupakan komitmen dalam rangka\nmeningkatkan daya saing dan penguatan kualitas sumber daya manusia,\nserta untuk "
+      },
+      {
+        "chunk_id": "uu-6-2023-1989",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 46A",
+        "score": 0.8706,
+        "text_preview": "hubungan kerja berhak mendapatkan jaminan\nkehilangan pekerjaan.\n(21 Jaminan kehilangan pekerjaan diselenggarakan\noleh badan penyelenggara Jaminan Sosial\nketenagakerjaan dan Pemerintah Pusat.\n(3) Keten"
+      },
+      {
+        "chunk_id": "uu-40-2004-0076",
+        "document_id": "uu-40-2004",
+        "pasal": "Pasal 53",
+        "score": 0.8689,
+        "text_preview": "minimum kepada setiap tenaga kerja. Se jalan dengan ketentuan tersebut, Majelis\nPermusyawaratan Rakyat Republ ik Indonesia dalam TAP No mor X/MPR/2001 menugaskan\nPresiden untuk membentuk Sistem Jamina"
+      },
+      {
+        "chunk_id": "pp-37-2021-0011",
+        "document_id": "pp-37-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8686,
+        "text_preview": "kecelakaan kerja.\n12. Badan Penyelenggara Jaminan Sosial Ketenagakerjaan\nyang selanjutnya disebut BPJS Ketenagakerjaan\nadalah badan hukum publik yang dibentuk\nberdasarkan Undang -Undang Nomor 24 Tahun"
+      },
+      {
+        "chunk_id": "uu-6-2023-2009",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 1",
+        "score": 0.867,
+        "text_preview": "digunakan untuk menempatkan Calon Pekerja\nMigran Indonesia.\n18. Jaminan Sosial adalah salah satu bentuk\npelindungan sosial untuk menjamin seluruh rakyat\nagar dapat memenuhi kebutuhan dasar hidupnya\nya"
+      }
+    ],
+    "elapsed_seconds": 9.14,
+    "is_rejected": false
+  },
+  {
+    "id": "Q18",
+    "difficulty": "out-of-domain",
+    "question": "Bagaimana ketentuan pajak penghasilan bagi perusahaan tambang?",
+    "expected_sources": [],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "pp-36-2021"
+    ],
+    "source_match": false,
+    "answer": "Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "pp-36-2021-0101",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 68",
+        "score": 0.8395,
+        "text_preview": "dibayarkan untuk pajak penghasilan dihitung dari\nseluruh pen ghasilan yang diterima oleh\nPekerja/Buruh.\n(2) Pajak penghasilan sebagaimana dimaksud pada ayat\n(1) dapat dibebankan kepada Pengusaha atau\n"
+      },
+      {
+        "chunk_id": "uu-6-2023-2186",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 26",
+        "score": 0.8338,
+        "text_preview": "(3) Pelaksanaan ketentuan sebagaimana dimaksud\npada ayat (21 dan ayat (2a) diatur dengan atau\nberdasarkan Peraturan Menteri Keuangan.\n(4) Penghasilan Kena Pajak sesudah dikurangi pajak\ndari suatu bent"
+      },
+      {
+        "chunk_id": "uu-6-2023-2205",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 9",
+        "score": 0.8334,
+        "text_preview": "(2) Kekurangan pembayaran pajak yang terutang\nberdasarkan Surat Pemberitahuan Tahunan Pajak\nPenghasilan harus dibayar lunas sebelum Surat\nPemberitahuan Pajak Penghasilan disampaikan.\n(2a) Pembayaran. "
+      },
+      {
+        "chunk_id": "uu-6-2023-0718",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 33",
+        "score": 0.8333,
+        "text_preview": "- 193-\n(3) Ketentuan mengenai pembinaan dan\npengembangan terhadap pengolahan Hasil Hutan\nsebagaimana dimaksud pada ayat (2) diatur dalam\nPeraturan Pemerintah.\n13. Ketentuan Pasal 35 diubah sehingga be"
+      },
+      {
+        "chunk_id": "uu-6-2023-0763",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 12A",
+        "score": 0.8329,
+        "text_preview": "berikut:\nPasal 17\n(1) Setiap Orang dilarang:\na. membawa alat-alat berat dan/atau alat-alat\nlain yang lazim atau patut diduga akan\ndigunakan untuk melakukan kegiatan\npenambangan dan/atau mengangkut has"
+      }
+    ],
+    "elapsed_seconds": 7.04,
+    "is_rejected": true
+  },
+  {
+    "id": "Q19",
+    "difficulty": "out-of-domain",
+    "question": "Apa saja syarat pembayaran dividen oleh BUMN?",
+    "expected_sources": [],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "pp-35-2021",
+      "pp-37-2021",
+      "uu-13-2003"
+    ],
+    "source_match": false,
+    "answer": "Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-6-2023-2181",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 26",
+        "score": 0.8387,
+        "text_preview": "pembayarannya oleh badan pemerintah, subjek pajak\ndalam negeri, penyelenggara kegiatan, bentuk usaha\ntetap, atau perwakilan perusahaan luar negeri lainnya\nkepada Wajib Pajak luar negeri selain bentuk "
+      },
+      {
+        "chunk_id": "pp-35-2021-0121",
+        "document_id": "pp-35-2021",
+        "pasal": "Pasal 58",
+        "score": 0.8302,
+        "text_preview": "dimaksud dalam Pasal 41 sampai dengan Pasal 52\ndan Pasal 54 sampai dengan Pasal 57.\n(2) Jika perhitungan manfaat dari program pensiun\nsebagaimana dimaksud pada ayat (1) lebih kecil\ndaripada uang pesan"
+      },
+      {
+        "chunk_id": "uu-13-2003-0248",
+        "document_id": "uu-13-2003",
+        "pasal": "Pasal 167",
+        "score": 0.83,
+        "text_preview": "ketentuan Pasal 156 ayat (4), maka selisihnya dibayar oleh pengusaha.\n(3) Dalam hal pengusaha telah mengikutsertakan pekerja/buruh dalam program pensiun yang iurannya/preminya dibayar\noleh pengusaha d"
+      },
+      {
+        "chunk_id": "uu-6-2023-3102",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 98",
+        "score": 0.8281,
+        "text_preview": "PRESIDEN\nBLIK INDON\n-28t-\nAyat (1)\nCukup jelas.\nAyat (2)\nYang dimaksud dengan \"didahulukan pembayarannya\"\nyaitu pembayaran Upah Pekerja/Buruh didahulukan\ndari semua jenis kreditur termasuk kreditur se"
+      },
+      {
+        "chunk_id": "pp-37-2021-0059",
+        "document_id": "pp-37-2021",
+        "pasal": "Pasal 39",
+        "score": 0.822,
+        "text_preview": "Hubungan Kerja, Pengusaha wajib membayar terlebih\ndahulu manfaat uang tunai kepada Peserta\nsebagaimana dimaksud dalam Pasal 21 ayat (1).\n(4) Dalam hal Pengusaha telah melunasi seluruh\ntunggakan iuran "
+      }
+    ],
+    "elapsed_seconds": 4.9,
+    "is_rejected": true
+  },
+  {
+    "id": "Q20",
+    "difficulty": "out-of-domain",
+    "question": "Siapa presiden Indonesia saat ini?",
+    "expected_sources": [],
+    "found_doc_ids": [
+      "uu-6-2023",
+      "uu-13-2003",
+      "uu-21-2000",
+      "pp-36-2021"
+    ],
+    "source_match": false,
+    "answer": "Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "uu-21-2000-0060",
+        "document_id": "uu-21-2000",
+        "pasal": "Pasal 47",
+        "score": 0.8154,
+        "text_preview": "pada tanggal 4 Agustus 2000\nPRESIDEN REPUBLIK\nINDONESIA,\nPRESIDEN\nREPUBLIK INDONESIA\n- 15 -\nttd.\nABDURRAHMAN WAHID\nDiundangkan di Jakarta\npada tanggal 4 Agustus 2000\nttd.\nDJOHAN EFFENDI\nLEMBARAN NEGAR"
+      },
+      {
+        "chunk_id": "pp-36-2021-0009",
+        "document_id": "pp-36-2021",
+        "pasal": "Pasal 1",
+        "score": 0.8137,
+        "text_preview": "bebas, terbuka, mandiri, demokratis, dan bertanggung\njawab guna memperjuangkan, membela serta\nmelindungi hak dan kepentingan Pekerja/Buruh serta\nmeningkatkan kesejahteraan Pekerja/Buruh dan\nkeluargany"
+      },
+      {
+        "chunk_id": "uu-6-2023-2563",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 186",
+        "score": 0.8131,
+        "text_preview": "Republik Indonesia\nDitetapkan di Jakarta\npada tanggal 30 Desember 2022\nJOKO WIDODO\nDiundangkan di Jakarta\npada tanggal 30 Desember 2022\nMENTERI SEKRETARIS NEGARA\nREPUBLIK INDONESIA,\nttd.\nPRATIKNO\nLEMB"
+      },
+      {
+        "chunk_id": "uu-13-2003-0001",
+        "document_id": "uu-13-2003",
+        "pasal": "",
+        "score": 0.8124,
+        "text_preview": "TENTANG\nKETENAGAKERJAAN\nDENGAN RAHMAT TUHAN YANG MAHA ESA\nPresiden Republik Indonesia,\nMenimbang: a. bahwa pembangunan nasional dilaksanakan dalam rangka pembangunan manusia Indonesia seutuhnya dan\npe"
+      },
+      {
+        "chunk_id": "uu-6-2023-0363",
+        "document_id": "uu-6-2023",
+        "pasal": "Pasal 63",
+        "score": 0.8104,
+        "text_preview": "n.menetapkan...\nPRESIDEN\nREPUBLIK INDONESIA\n-89-\nn. menetapkan kebijakan mengenai tata cara\npengakuan keberadaan Masyarakat Hukum\nAdat, Kearifan Lokal, dan hak Masyarakat\nHukum Adat yang terkait denga"
+      }
+    ],
+    "elapsed_seconds": 4.47,
+    "is_rejected": true
+  }
+]

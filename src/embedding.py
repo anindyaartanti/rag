@@ -24,14 +24,14 @@ class EmbeddingModel:
     def embed_passages(self, texts: list[str], batch_size: int | None = None) -> list[list[float]]:
         texts = [PASSAGE_PREFIX + t for t in texts]
         return self._model.encode(
-            texts, batch_size=batch_size or self.batch_size, normalize_embeddings=True, show_progress_bar=False
+            texts, batch_size=batch_size or self.batch_size, normalize_embeddings=True, show_progress_bar=True
         )
 
     def embed_query(self, query: str) -> list[float]:
-        return self._model.encode([QUERY_PREFIX + query], normalize_embeddings=True, show_progress_bar=False)[0]
+        return self._model.encode([QUERY_PREFIX + query], normalize_embeddings=True, show_progress_bar=True)[0]
 
     def embed_queries(self, queries: list[str], batch_size: int | None = None) -> list[list[float]]:
         queries = [QUERY_PREFIX + q for q in queries]
         return self._model.encode(
-            queries, batch_size=batch_size or self.batch_size, normalize_embeddings=True, show_progress_bar=False
+            queries, batch_size=batch_size or self.batch_size, normalize_embeddings=True, show_progress_bar=True
         )

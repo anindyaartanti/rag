@@ -1,0 +1,90 @@
+id,difficulty,question,answer,sources_cited,expected_sources,found_sources,source_match,is_rejected,faithfulness_score,relevance_score,source_correctness_score,completeness_score,notes
+Q01,easy,Apa yang dimaksud dengan hubungan kerja?,"Hubungan kerja adalah hubungan antara pengusaha dengan pekerja/buruh berdasarkan perjanjian kerja, yang mempunyai unsur pekerjaan, upah, dan perintah [S1, S2].","[S1], [S2]",uu-13-2003,"uu-13-2003, pp-36-2021",YES,NO,2,2,2,0,F:Grounded answer with citations | R:High keyword overlap (4/6) | S:All 2 sources match retrieved docs | C:Very short answer (20 words)
+Q02,easy,Apa yang dimaksud dengan perjanjian kerja waktu tertentu (PKWT)?,Perjanjian Kerja Waktu Tertentu (PKWT) adalah Perjanjian Kerja antara Pekerja/Buruh dengan Pengusaha untuk mengadakan Hubungan Kerja dalam waktu tertentu atau untuk pekerjaan tertentu [S1].,[S1],"pp-35-2021, uu-13-2003",pp-35-2021,YES,NO,2,2,2,0,F:Grounded answer with citations | R:High keyword overlap (6/9) | S:All 1 sources match retrieved docs | C:Very short answer (24 words)
+Q03,easy,Apa yang dimaksud dengan upah minimum?,"Berdasarkan dokumen yang tersedia, upah minimum merupakan upah bulanan terendah yang terdiri atas:
+a. Upah tanpa tunjangan; atau
+b. Upah pokok dan tunjangan tetap [S3].",[S3],"pp-36-2021, uu-13-2003","uu-13-2003, pp-36-2021",YES,NO,2,2,2,0,F:Grounded answer with citations | R:High keyword overlap (3/6) | S:All 1 sources match retrieved docs | C:Very short answer (25 words)
+Q04,easy,Apa yang dimaksud dengan serikat pekerja/serikat buruh?,"Serikat pekerja/serikat buruh adalah organisasi yang dibentuk dari, oleh, dan untuk pekerja/buruh baik di perusahaan maupun di luar perusahaan, yang bersifat bebas, terbuka, mandiri, demokratis, dan bertanggung jawab guna memperjuangkan, membela serta melindungi hak dan kepentingan pekerja/buruh serta meningkatkan kesejahteraan pekerja/buruh dan keluarganya [S1, S3, S5].
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*","[S1], [S3], [S5]",uu-21-2000,"uu-21-2000, uu-13-2003, pp-35-2021",YES,YES,0,1,2,1,"F:REJECTED but source_match=YES (over-refusal) | R:Rejected - partial relevance (context insufficient) | S:Rejected, source check N/A | C:Rejected - completeness N/A (context insufficient)"
+Q05,easy,Berapa batas maksimum waktu kerja lembur dalam sehari?,"Batas maksimum waktu kerja lembur dalam sehari berbeda-beda tergantung pada peraturan yang menjadi dasar:
+
+1. Berdasarkan **Undang-Undang Nomor 13 Tahun 2003**, waktu kerja lembur hanya dapat dilakukan paling banyak **3 (tiga) jam dalam 1 (satu) hari** [S4].
+2. Berdasarkan **Undang-Undang Nomor 6 Tahun 2023** dan **Peraturan Pemerintah Nomor 35 Tahun 2021**, waktu kerja lembur dapat dilakukan **paling lama 4 (empat) jam dalam 1 (satu) hari** [S2, S3, S5].","[S2], [S3], [S4], [S5]",uu-13-2003,"pp-35-2021, uu-6-2023, uu-13-2003",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (7/8) | S:All 4 sources match retrieved docs | C:Partial answer (68 words)
+Q06,medium,Apakah PKWT dapat diperpanjang dan berapa lama keseluruhan masa kerjanya?,"Ya, Perjanjian Kerja Waktu Tertentu (PKWT) dapat diperpanjang [S1]. Ketentuan mengenai jangka waktu keseluruhan PKWT beserta perpanjangannya adalah paling lama 5 (lima) tahun [S1].",[S1],"pp-35-2021, uu-13-2003",pp-35-2021,YES,NO,2,2,2,0,F:Grounded answer with citations | R:High keyword overlap (5/10) | S:All 1 sources match retrieved docs | C:Very short answer (24 words)
+Q07,medium,Apa saja hak pekerja/buruh yang harus diterima ketika terjadi PHK?,"Berdasarkan dokumen yang tersedia, hak pekerja/buruh yang harus diterima ketika terjadi pemutusan hubungan kerja (PHK) bervariasi tergantung pada alasannya:
+
+1. **PHK karena perubahan status, penggabungan, atau peleburan perusahaan:**
+   * Jika pengusaha tidak bersedia menerima pekerja/buruh di perusahaannya, pekerja berhak atas uang pesangon sebesar 2 kali ketentuan Pasal 156 ayat (2), uang penghargaan masa kerja 1 kali ketentuan Pasal 156 ayat (3), dan uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S2, S3].
+   * Jika terjadi perubahan status dan hubungan kerja, pekerja berhak atas uang pesangon sebesar 1 kali ketentuan Pasal 156 ayat (2), uang penghargaan masa kerja 1 kali ketentuan Pasal 156 ayat (3), dan uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S3].
+
+2. **PHK karena perusahaan tutup yang disebabkan kerugian terus menerus selama 2 tahun atau keadaan memaksa (*force majeur*):**
+   * Pekerja berhak atas uang pesangon sebesar 1 kali ketentuan Pasal 156 ayat (2), uang penghargaan masa kerja sebesar 1 kali ketentuan Pasal 156 ayat (3), dan uang penggantian hak [S2].
+
+3. **PHK karena kesalahan berat:**
+   * Pekerja/buruh dapat memperoleh uang penggantian hak sesuai ketentuan Pasal 156 ayat (4) [S5].
+   * Bagi pekerja/buruh yang tugas dan fungsinya tidak mewakili kepentingan pengusaha secara langsung, selain uang penggantian hak, juga diberikan uang [S5]. *(Catatan: teks dokumen terpotong pada bagian akhir ketentuan ini).*
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*","[S2], [S3], [S5]","uu-13-2003, pp-35-2021","uu-13-2003, uu-21-2000",YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (9/11) | S:All 3 sources match retrieved docs | C:Detailed answer (228 words)
+Q08,medium,Bagaimana cara menghitung besaran uang pesangon?,"Berdasarkan dokumen yang tersedia, perhitungan uang pesangon ditentukan berdasarkan masa kerja dengan ketentuan paling sedikit sebagai berikut:
+1. Masa kerja kurang dari 1 (satu) tahun: 1 (satu) bulan upah [S4].
+2. Masa kerja 1 (satu) tahun atau lebih tetapi kurang dari 2 (dua) tahun: 2 (dua) bulan upah [S4].
+3. Masa kerja 2 (tahun) atau lebih tetapi kurang dari 3 (tiga) tahun: 3 (tiga) bulan upah [S4].
+4. Masa kerja 3 (tiga) tahun atau lebih tetapi kurang dari 4 (empat) tahun: 4 (empat) bulan upah [S4].
+
+Selain itu, komponen upah yang digunakan sebagai dasar perhitungan uang pesangon terdiri atas:
+1. Upah pokok [S2].
+2. Tunjangan tetap yang diberikan kepada pekerja/buruh dan keluarganya [S2].
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*","[S2], [S3], [S4]","pp-35-2021, uu-13-2003","uu-13-2003, pp-36-2021",YES,NO,2,1,2,2,F:Grounded answer with citations | R:Moderate keyword overlap (2/6) | S:All 3 sources match retrieved docs | C:Detailed answer (127 words)
+Q09,medium,Apa saja syarat sah perjanjian kerja?,"Berdasarkan dokumen yang tersedia, perjanjian kerja dibuat atas dasar pekerjaan yang diperjanjikan tidak bertentangan dengan ketertiban umum, kesusilaan, dan peraturan perundang-undangan yang berlaku [S5]. 
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*",[S5],uu-13-2003,"uu-13-2003, pp-36-2021",YES,NO,2,1,2,1,F:Grounded answer with citations | R:Moderate keyword overlap (2/6) | S:All 1 sources match retrieved docs | C:Partial answer (38 words)
+Q10,medium,Bagaimana tata cara penggunaan tenaga kerja asing (TKA)?,"Berdasarkan dokumen yang tersedia, informasi mengenai tata cara penggunaan Tenaga Kerja Asing (TKA) diatur melalui keharusan bagi Pemberi Kerja TKA yang akan mempekerjakan TKA untuk memiliki Rencana Penggunaan Tenaga Kerja Asing (RPTKA) yang disahkan oleh Menteri atau pejabat yang ditunjuk [S3]. Jangka waktu RPTKA tersebut disesuaikan dengan perjanjian kerja atau perjanjian pekerjaan [S3]. 
+
+Namun, ketentuan kepemilikan RPTKA ini tidak diwajibkan bagi:
+1. Instansi pemerintah, perwakilan negara asing, dan badan internasional; atau
+2. Pemberi Kerja TKA yang mempekerjakan TKA sebagai anggota direksi atau anggota dewan [S3].
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*",[S3],"permenaker-10-2018, uu-13-2003",permenaker-10-2018,YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (7/8) | S:All 1 sources match retrieved docs | C:Partial answer (99 words)
+Q11,medium,Apa saja manfaat program Jaminan Kehilangan Pekerjaan (JKP)?,"Manfaat program Jaminan Kehilangan Pekerjaan (JKP) bagi Pekerja/Buruh yang mengalami Pemutusan Hubungan Kerja berupa:
+1. Manfaat uang tunai [S1].
+2. Akses informasi pasar kerja [S1].
+3. Pelatihan Kerja [S1].","[S1], [S2], [S3]",pp-37-2021,pp-37-2021,YES,NO,2,2,2,0,F:Grounded answer with citations | R:High keyword overlap (6/8) | S:All 3 sources match retrieved docs | C:Very short answer (29 words)
+Q12,medium,Bagaimana penyelesaian perselisihan hubungan industrial melalui mediasi?,"Penyelesaian perselisihan hubungan industrial difasilitasi oleh pemerintah melalui penyediaan tenaga mediator yang bertugas untuk mempertemukan kepentingan kedua belah pihak yang berselisih [S1]. 
+
+Dalam hal penyelesaian melalui mediasi tidak mencapai kesepakatan yang dituangkan dalam perjanjian bersama, maka salah satu pihak dapat mengajukan gugatan ke Pengadilan Hubungan Industrial [S2, S3, S4].
+
+DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.","[S1], [S2], [S3], [S4]",uu-2-2004,uu-2-2004,YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (6/7) | S:All 4 sources match retrieved docs | C:Partial answer (63 words)
+Q13,medium,Apa yang dimaksud dengan struktur dan skala upah?,Struktur dan Skala Upah adalah susunan tingkat upah dari yang terendah sampai dengan yang tertinggi atau dari yang tertinggi sampai dengan yang terendah yang memuat kisaran nilai nominal upah dari yang terkecil sampai dengan yang terbesar untuk setiap golongan jabatan [S1].,[S1],"permenaker-1-2017, pp-36-2021","pp-36-2021, permenaker-1-2017",YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (6/8) | S:All 1 sources match retrieved docs | C:Partial answer (41 words)
+Q14,hard,"Bagaimana ketentuan PHK menurut regulasi yang tersedia, termasuk hak-hak yang timbul?",Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,"uu-13-2003, uu-6-2023, pp-35-2021",uu-6-2023,YES,YES,0,1,2,1,"F:REJECTED but source_match=YES (over-refusal) | R:Rejected - partial relevance (context insufficient) | S:Rejected, source check N/A | C:Rejected - completeness N/A (context insufficient)"
+Q15,hard,Apa perbedaan antara PKWT dan PKWTT?,"Perbedaan antara PKWT dan PKWTT adalah:
+
+* **PKWT (Perjanjian Kerja Waktu Tertentu)** adalah perjanjian kerja antara pekerja/buruh dengan pengusaha untuk mengadakan hubungan kerja dalam waktu tertentu atau untuk pekerjaan tertentu [S1].
+* **PKWTT (Perjanjian Kerja Waktu Tidak Tertentu)** adalah perjanjian kerja antara pekerja/buruh dengan pengusaha untuk mengadakan hubungan kerja yang bersifat tetap [S1].",[S1],"uu-13-2003, pp-35-2021",pp-35-2021,YES,NO,2,2,2,1,F:Grounded answer with citations | R:High keyword overlap (5/6) | S:All 1 sources match retrieved docs | C:Partial answer (53 words)
+Q16,hard,Bagaimana hubungan antara UU Cipta Kerja dan UU 13/2003 terkait pengupahan dan pesangon?,"Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*",,"uu-6-2023, uu-13-2003, pp-35-2021","uu-13-2003, uu-6-2023, pp-36-2021",YES,YES,0,1,2,1,"F:REJECTED but source_match=YES (over-refusal) | R:Rejected - partial relevance (context insufficient) | S:Rejected, source check N/A | C:Rejected - completeness N/A (context insufficient)"
+Q17,hard,Apa saja program jaminan sosial ketenagakerjaan dan badan yang menyelenggarakannya?,"Berdasarkan dokumen yang tersedia, berikut adalah program jaminan sosial dan badan yang menyelenggarakannya:
+
+* **Program Jaminan Sosial Tenaga Kerja (swasta) berdasarkan UU No. 3 Tahun 1992:**
+  1. Jaminan pemeliharaan kesehatan [S3]
+  2. Jaminan kecelakaan kerja [S3], [S4]
+  3. Jaminan hari tua [S3], [S4]
+  4. Jaminan kematian [S3], [S4]
+
+* **Program untuk Pegawai Negeri Sipil (PNS):**
+  1. Dana Tabungan dan Asuransi Pegawai Negeri [S3]
+  2. Asuransi Kesehatan (ASKES) [S3]
+
+* **Program Jaminan Kehilangan Pekerjaan (JKP):**
+  Jaminan sosial yang diberikan kepada pekerja/buruh yang mengalami pemutusan hubungan kerja [S2].
+
+* **Badan Penyelenggara:**
+  1. **BPJS Ketenagakerjaan:** Badan hukum publik yang dibentuk berdasarkan Undang-Undang Nomor 24 Tahun 2011 [S1].
+  2. **BPJS Kesehatan:** Badan hukum yang dibentuk untuk menyelenggarakan program Jaminan Kesehatan [S1].
+
+*DISCLAIMER: Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan pengganti konsultasi hukum.*","[S1], [S2], [S3], [S4]","uu-40-2004, uu-24-2011, pp-37-2021","pp-37-2021, uu-24-2011, uu-40-2004",YES,NO,2,2,2,2,F:Grounded answer with citations | R:High keyword overlap (8/10) | S:All 4 sources match retrieved docs | C:Detailed answer (131 words)
+Q18,out-of-domain,Bagaimana ketentuan pajak penghasilan bagi perusahaan tambang?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,,uu-6-2023,NO,YES,2,2,2,2,"F:OOD correctly rejected | R:OOD - relevance N/A, rejection is correct behavior | S:OOD correctly rejected, no sources needed | C:OOD correctly rejected"
+Q19,out-of-domain,Apa saja syarat pembayaran dividen oleh BUMN?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,,"pp-35-2021, uu-6-2023, uu-13-2003",NO,YES,2,2,2,2,"F:OOD correctly rejected | R:OOD - relevance N/A, rejection is correct behavior | S:OOD correctly rejected, no sources needed | C:OOD correctly rejected"
+Q20,out-of-domain,Siapa presiden Indonesia saat ini?,Informasi yang diperlukan tidak ditemukan dalam dokumen yang tersedia.,,,"uu-6-2023, uu-24-2011, uu-21-2000",NO,YES,2,2,2,2,"F:OOD correctly rejected | R:OOD - relevance N/A, rejection is correct behavior | S:OOD correctly rejected, no sources needed | C:OOD correctly rejected"
