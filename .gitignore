@@ -10,3 +10,6 @@ logs/
 *.db
 *.faiss
 .peraturan.go.id/
+evaluation/generation_outputs*.json
+evaluation/evaluation_results*.csv
+evaluation/retrieval_results.json
