@@ -1,9 +1,3 @@
-"""ChromaDB: pembuatan collection, penambahan chunk, verifikasi (plan Bab 24).
-
-Struktur data (plan Bab 7.2):
-  id = chunk_id, embedding, document/chunk text, metadata.
-Metadata minimum (plan Bab 7.3) dipertahankan dari chunks.jsonl.
-"""
 import json
 import logging
 from pathlib import Path

@@ -1,18 +1,3 @@
-"""CLI Demo: RAG Ketenagakerjaan Indonesia (plan Bab 16 & 62).
-
-Interface (plan Bab 16.1):
-  Notebook atau CLI. Jangan mulai dari frontend.
-
-4 skenario demo (plan Bab 62):
-  Demo 1 — Simple: "Apa yang dimaksud dengan PKWT?"
-  Demo 2 — Natural language: "Kalau seorang pekerja terkena PHK, hak apa saja yang mungkin diperoleh?"
-  Demo 3 — Multi-document: "Bagaimana ketentuan PHK berdasarkan regulasi yang tersedia?"
-  Demo 4 — Out of scope: "Bagaimana ketentuan pajak perusahaan tambang?"
-
-Disclaimer (plan Bab 14.4):
-  Sistem ini merupakan prototype RAG untuk tujuan pembelajaran dan bukan
-  pengganti konsultasi hukum.
-"""
 import sys
 from pathlib import Path
 
@@ -79,9 +64,8 @@ def print_result(result: dict, show_retrieved: bool = False):
 
 
 def run_demo_scenarios(pipeline: RAGPipeline):
-    """Jalankan 4 skenario demo (plan Bab 62)."""
     print("\n" + "=" * 60)
-    print("  DEMO SCENARIOS (plan Bab 62)")
+    print("  DEMO SCENARIOS")
     print("=" * 60)
     print()
 
@@ -95,7 +79,6 @@ def run_demo_scenarios(pipeline: RAGPipeline):
 
 
 def interactive_mode(pipeline: RAGPipeline):
-    """Mode interaktif: ketik pertanyaan bebas."""
     print("Ketik pertanyaan (ketik 'quit' untuk keluar, 'debug' untuk toggle debug mode):\n")
 
     debug_mode = False
@@ -118,11 +101,11 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="CLI Demo RAG Ketenagakerjaan Indonesia (plan Bab 16/62)"
+        description="CLI Demo RAG Ketenagakerjaan Indonesia"
     )
     parser.add_argument(
         "--demo", action="store_true",
-        help="Jalankan 4 skenario demo (plan Bab 62)"
+        help="Jalankan 4 skenario demo"
     )
     parser.add_argument(
         "-k", type=int, default=5,

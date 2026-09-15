@@ -1,11 +1,3 @@
-"""Embedding lokal untuk dokumen (passage) dan query.
-
-Model: intfloat/multilingual-e5-base (dimensi 768, mendukung Bahasa Indonesia).
-Konvensi prefix resmi model (plan Bab 6.5):
-  - passage:  -> untuk dokumen/chunk
-  - query:    -> untuk pertanyaan
-Dokumen dan query menggunakan model yang sama (plan Bab 6.4).
-"""
 from sentence_transformers import SentenceTransformer
 
 from config import EMBEDDING_MODEL, EMBEDDING_DIMENSION, PASSAGE_PREFIX, QUERY_PREFIX

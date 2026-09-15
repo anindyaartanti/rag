@@ -1,23 +1,6 @@
-"""Gemini wrapper untuk generation (plan Bab 13).
-
-Gemini hanya digunakan pada tahap generation (Bab 13.1):
-  - BUKAN untuk embedding
-  - BUKAN untuk chunking
-  - BUKAN untuk retrieval
-
-API key dari environment variable (Bab 13.2):
-  GOOGLE_API_KEY=...
-
-Temperature konservatif (Bab 13.3):
-  temperature = 0.1 (range 0-0.2)
-
-Rate limit handling:
-  Free tier: 5 req/menit. Retry with exponential backoff.
-"""
 import time
 import warnings
 
-# Suppress HF weights loading warning & AFC warning
 warnings.filterwarnings("ignore", message=".*HF Hub.*")
 warnings.filterwarnings("ignore", message=".*automatic function calling.*")
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -28,7 +11,7 @@ from google.genai.types import GenerateContentConfig, AutomaticFunctionCallingCo
 from config import GOOGLE_API_KEY, GEMINI_MODEL, TEMPERATURE
 
 MAX_RETRIES = 3
-RETRY_DELAY_BASE = 15  # detik
+RETRY_DELAY_BASE = 15
 
 
 class GeminiGenerator:
@@ -52,9 +35,6 @@ class GeminiGenerator:
         self._client = genai.Client(api_key=key)
 
     def generate(self, prompt: str) -> str:
-        """Kirim prompt ke Gemini dan return response text.
-        Retry dengan exponential backoff jika kena rate limit (429).
-        """
         config = GenerateContentConfig(
             temperature=self.temperature,
             automatic_function_calling=AutomaticFunctionCallingConfig(disable=True),
@@ -78,4 +58,3 @@ class GeminiGenerator:
                 raise
 
         raise RuntimeError(f"Gagal setelah {MAX_RETRIES} retries: {error_msg}")
-

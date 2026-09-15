@@ -1,9 +1,3 @@
-"""Retriever: query -> embedding -> similarity search -> top-k chunk (plan Bab 11/25).
-
-Kontrak antaranggota (plan Bab 47.2): retrieve(query, k=5) -> list of
-  {"text", "metadata", "score"}. score = cosine similarity (0..1).
-Debug mode (plan Bab 11.5) menampilkan rank/source/pasal/score tanpa LLM.
-"""
 import logging
 from pathlib import Path
 
@@ -53,6 +47,5 @@ class Retriever:
 
 
 def retrieve(query: str, k: int = TOP_K_DEFAULT, retriever: Retriever | None = None) -> list[dict]:
-    """Fungsi kontrak antaranggota (plan Bab 47.2)."""
     r = retriever or Retriever()
     return r.retrieve(query, k=k)

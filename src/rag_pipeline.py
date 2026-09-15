@@ -1,23 +1,3 @@
-"""RAG pipeline end-to-end: question → retrieval → context → Gemini → answer + sources (plan Bab 27).
-
-Fungsi utama:
-  answer_question(question) → {"answer", "sources", "retrieved_chunks"}
-
-Pipeline (plan Bab 65):
-  User question
-    → Local embedding (via retriever)
-    → Similarity search (ChromaDB)
-    → Top-k chunks
-    → Context construction
-    → Prompt
-    → Gemini 2.5 Flash
-    → Grounded answer + Sources
-    → User
-
-Logging (plan Bab 41):
-  Simpan timestamp, question, retrieved_document_ids, retrieved_scores,
-  prompt_length, answer, sources ke logs/query_log.jsonl
-"""
 import json
 import logging
 import sys
@@ -48,33 +28,18 @@ class RAGPipeline:
         LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
     def answer_question(self, question: str, k: int | None = None) -> dict:
-        """Jawab pertanyaan menggunakan RAG (plan Bab 27).
-
-        Returns:
-            {
-                "answer": str,
-                "sources": list[dict],
-                "retrieved_chunks": list[dict]
-            }
-        """
         k = k or self.top_k
 
-        # 1. Retrieval
         retrieved = self.retriever.retrieve(question, k=k)
 
-        # 2. Build context
         context = build_context(retrieved)
 
-        # 3. Build prompt
         prompt = build_prompt(question, context)
 
-        # 4. Generate jawaban via Gemini
         answer = self.generator.generate(prompt)
 
-        # 5. Parse source attribution dari jawaban
         sources = parse_sources_from_answer(answer, retrieved)
 
-        # 6. Logging (plan Bab 41)
         self._log_query(question, retrieved, prompt, answer, sources)
 
         return {
@@ -91,7 +56,6 @@ class RAGPipeline:
         answer: str,
         sources: list[dict],
     ) -> None:
-        """Simpan log query ke JSONL (plan Bab 41)."""
         log_entry = {
             "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "question": question,
@@ -109,7 +73,6 @@ class RAGPipeline:
 
 
 def answer_question(question: str, k: int = TOP_K_DEFAULT) -> dict:
-    """Fungsi top-level untuk kemudahan penggunaan (plan Bab 47.2)."""
     pipeline = RAGPipeline(top_k=k)
     return pipeline.answer_question(question)
 

@@ -1,11 +1,3 @@
-"""CLI: bangun/verifikasi index vector ChromaDB dari chunks.jsonl (plan Bab 24).
-
-Contoh:
-  uv run python src/build_vectorstore.py                # build bila belum ada (idempotent)
-  uv run python src/build_vectorstore.py --force        # rebuild dari nol
-  uv run python src/build_vectorstore.py --check        # verifikasi buka-ulang
-  uv run python src/build_vectorstore.py --chunks data/processed/chunks_a.jsonl
-"""
 import argparse
 import logging
 import sys

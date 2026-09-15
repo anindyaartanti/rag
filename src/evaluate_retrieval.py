@@ -1,9 +1,3 @@
-"""Evaluasi retrieval (plan Bab 29-33): Recall@k dokumen + tabel relevance.
-
-Menjalankan retrieve(query, k=5) untuk setiap pertanyaan evaluasi,
-menentukan relevansi berdasarkan expected_sources (document_id), menyimpan
-hasil detail + ringkasan ke evaluation/retrieval_results.json.
-"""
 import json
 import logging
 import sys

@@ -1,10 +1,3 @@
-"""
-GUI Streamlit: RAG Ketenagakerjaan Indonesia.
-
-Jalankan:
-  uv run streamlit run app_streamlit.py --server.port 8501
-"""
-
 import sys
 from pathlib import Path
 
@@ -14,11 +7,6 @@ import streamlit as st
 from config import GEMINI_MODEL, TEMPERATURE
 from prompt import DISCLAIMER, format_sources_footer
 from rag_pipeline import RAGPipeline
-
-
-# ============================================================
-# CONFIG
-# ============================================================
 
 TOP_K = 5
 
@@ -34,11 +22,6 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="expanded",
 )
-
-
-# ============================================================
-# CUSTOM CSS
-# ============================================================
 
 CSS = f"""
 <style>
@@ -237,21 +220,11 @@ section[data-testid="stSidebar"] label {{
 
 st.markdown(CSS, unsafe_allow_html=True)
 
-
-# ============================================================
-# SESSION STATE
-# ============================================================
-
 if "history" not in st.session_state:
     st.session_state.history = []
 
 if "pipeline" not in st.session_state:
     st.session_state.pipeline = None
-
-
-# ============================================================
-# SIDEBAR
-# ============================================================
 
 with st.sidebar:
 
@@ -286,10 +259,6 @@ with st.sidebar:
     )
 
 
-# ============================================================
-# LOAD PIPELINE
-# ============================================================
-
 @st.cache_resource
 def load_pipeline():
     return RAGPipeline(top_k=TOP_K)
@@ -299,11 +268,6 @@ if st.session_state.pipeline is None:
     st.session_state.pipeline = load_pipeline()
 
 pipeline = st.session_state.pipeline
-
-
-# ============================================================
-# HEADER (sticky)
-# ============================================================
 
 st.markdown(
     """
@@ -321,11 +285,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-
-# ============================================================
-# CHAT HISTORY
-# ============================================================
 
 for msg in st.session_state.history:
     with st.chat_message(msg["role"]):
@@ -346,11 +305,6 @@ for msg in st.session_state.history:
                         )
                         st.caption(c.get("text", "")[:300])
                         st.divider()
-
-
-# ============================================================
-# CHAT INPUT
-# ============================================================
 
 if user_query := st.chat_input("Tanyakan sesuatu tentang regulasi..."):
 
@@ -398,11 +352,6 @@ if user_query := st.chat_input("Tanyakan sesuatu tentang regulasi..."):
             "chunks": chunks,
             "footer": footer,
         })
-
-
-# ============================================================
-# FOOTER
-# ============================================================
 
 st.markdown(
     f"""
